@@ -46,12 +46,12 @@ body{
 
 }
 
-#inhalt{
+#content{
     border: 1px solid black;
     height: 350px;
 }
 
-#inhalt-links{
+#content-left{
     width: 480px;
     height: 200px;
     display:block;
@@ -67,7 +67,7 @@ body{
     border: 1px solid orchid;
 }
 
-#inhalt-rechts{
+#content-right{
     border: 1px solid gold;
     display: block;
     float: right;
