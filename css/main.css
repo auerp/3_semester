@@ -1,1 +1,47 @@
-hallo
+
+#container{
+    border: 1px solid black;
+    width: 925px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#header{
+    width: 925px;
+    height: 125px;
+    padding: 0px 0px 0px 20px;
+    border: 1px solid green;
+    position: relative;
+}
+
+#header-left{
+    width: 700px;
+    border: 1px solid red;
+}
+
+#header-right{
+    width: 225px;
+    border: 1px solid blue;
+}
+
+#content{
+    border: 1px solid yellow;
+    margin: 20px 0 0;
+    height: 300px;
+}
+
+#content-left{
+
+}
+
+#formular{
+
+}
+
+#content-right{
+
+}
+
+#messe_info{
+
+}
