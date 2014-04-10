@@ -37,27 +37,38 @@
 
 }
 
-#content{
+#inhalt{
     border: 1px solid yellow;
     margin: 200px 0 0;
     height: 300px;
 }
 
-#content-left{
-    width: 500px;
+#inhalt_links{
+    width: 450px;
+    height: 200px;
+    display:block;
+    float:left;
+    border: 1px solid darkgreen;
 }
 
 #formular{
-    height: 150px;
+    display: block;
+    float:left;
+    height: auto;
     padding-left: 20px;
     border: 1px solid orchid;
 }
 
-#content-right{
-    width: 425px;
-
+#inhalt_rechts{
+    border: 1px solid gold;
+    display: block;
+    float: right;
+    width: 465px;
+    height: 200px;
 }
 
 #messe_info{
-
+    border: 1px solid springgreen;
+    display: block;
+    float: right;
 }
