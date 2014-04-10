@@ -1,5 +1,7 @@
 
+
 #container{
+    background-color: #99D9EA;
     border: 1px solid black;
     width: 925px;
     height: 500px;
@@ -9,36 +11,50 @@
 #header{
     width: 925px;
     height: 125px;
-    padding: 0px 0px 0px 20px;
-    border: 1px solid green;
-    position: relative;
+    border: 1px solid deeppink;
+    display: block;
+    float: left;
+    /**position: relative;**/
 }
 
 #header-left{
-    width: 700px;
+    width: 575px;
+    display: block;
+    float:left;
+    padding-left: 20px;
     border: 1px solid red;
+
 }
 
 #header-right{
-    width: 225px;
-    border: 1px solid blue;
+    width: 326px;
+    /**border: 1px solid blue;**/
+    display:block;
+    float:right;
+    /**right: 50px;    /** Abstand von rechts **/
+    /**position: absolute;**/
+    /**top: 15px;**/
+
 }
 
 #content{
     border: 1px solid yellow;
-    margin: 20px 0 0;
+    margin: 200px 0 0;
     height: 300px;
 }
 
 #content-left{
-
+    width: 500px;
 }
 
 #formular{
-
+    height: 150px;
+    padding-left: 20px;
+    border: 1px solid orchid;
 }
 
 #content-right{
+    width: 425px;
 
 }
 
