@@ -2,19 +2,18 @@ body{
     font-size: 12px;
     font-weight: bold;
     font-family: Arial Black;
-    line-height: 12px;
+    font-height: 12px;
 }
 
-h1{
+/*h1{
     font-size: 20px;
-}
+}*/
 
 #container{
     background-color: #99D9EA;
-    border: 1px solid black;
     width: 1000px;
     height: 500px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 #header{
@@ -48,12 +47,11 @@ h1{
 }
 
 #inhalt{
-    border: 1px solid yellow;
-    margin: 200px 0 0;
-    height: 300px;
+    border: 1px solid black;
+    height: 350px;
 }
 
-#inhalt_links{
+#inhalt-links{
     width: 480px;
     height: 200px;
     display:block;
@@ -69,7 +67,7 @@ h1{
     border: 1px solid orchid;
 }
 
-#inhalt_rechts{
+#inhalt-rechts{
     border: 1px solid gold;
     display: block;
     float: right;
@@ -77,7 +75,7 @@ h1{
     height: 200px;
 }
 
-#messe_info{
+#messe-info{
     border: 1px solid springgreen;
     display: block;
     float: right;
