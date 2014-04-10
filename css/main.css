@@ -1,15 +1,24 @@
+body{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial Black;
+    line-height: 12px;
+}
 
+h1{
+    font-size: 20px;
+}
 
 #container{
     background-color: #99D9EA;
     border: 1px solid black;
-    width: 925px;
+    width: 1000px;
     height: 500px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 #header{
-    width: 925px;
+    width: 1000px;
     height: 125px;
     border: 1px solid deeppink;
     display: block;
@@ -18,19 +27,20 @@
 }
 
 #header-left{
-    width: 575px;
+    width: 625px;
     display: block;
     float:left;
-    padding-left: 20px;
+    padding: 0 0 0 20px; /* Abstand von: oben, rechts, unten, links */
     border: 1px solid red;
 
 }
 
 #header-right{
-    width: 326px;
+    width: 327px;
     /**border: 1px solid blue;**/
     display:block;
     float:right;
+
     /**right: 50px;    /** Abstand von rechts **/
     /**position: absolute;**/
     /**top: 15px;**/
@@ -44,7 +54,7 @@
 }
 
 #inhalt_links{
-    width: 450px;
+    width: 480px;
     height: 200px;
     display:block;
     float:left;
@@ -63,7 +73,7 @@
     border: 1px solid gold;
     display: block;
     float: right;
-    width: 465px;
+    width: 495px;
     height: 200px;
 }
 
