@@ -4,7 +4,7 @@
 <head>
 
     <!-- CSS Datei laden -->
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css"/>
 
     <title>Messe Formular</title>
 </head>
@@ -14,6 +14,7 @@
     <div id="header">
         <div id="header-left">
             <h1>Anmeldung</h1>
+
             <p>Hier k&ouml;nnt ihr euch f&uuml;r eine Messe eurer Wahl anmelden</p>
         </div>
 
@@ -25,94 +26,96 @@
     <div id="content">
         <div id="content-left">
             <div id="formular">
-               <table>
-                   <tr>
-                       <td>
-                           <label for="name">Nachname:</label>
-                           </td>
-                       <td>
-                        <input type="text" id="name"/>
-                           </td>
-                       </tr>
-                   <tr>
-                       <td>
-                <label for="vorname">Vorname:</label>
-                           </td>
-                       <td>
-                    <input type=""text" id="vorname"/>
-</td>
-                       </tr>
-                   <tr>
-                       <td>
-                <label for="matrikelnr">Matrikelnummer:</label>
-                           </td>
-                    <td><input type="text" id="matrikelnr"/>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="name">Nachname:</label>
                         </td>
-                       </tr>
-                   <tr>
-                       <td>
-                <label for="email">E-Mail Adresse:</label>
-                           </td>
-                    <td><input type="text" id="email"/>
+                        <td>
+                            <input type="text" id="name"/>
                         </td>
-                       </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="vorname">Vorname:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="vorname"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="matrikelnr">Matrikelnummer:</label>
+                        </td>
+                        <td><input type="text" id="matrikelnr"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-Mail Adresse:</label>
+                        </td>
+                        <td><input type="text" id="email"/>
+                        </td>
+                    </tr>
 
-                   <tr>
-                       <td>
-                <label for="handynummer">Handynummer:</label>
-                           </td>
-                       <td>
-                    <input type="text" id="hand">
-                           </td>
-                       </tr>
+                    <tr>
+                        <td>
+                            <label for="handynummer">Handynummer:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="hand">
+                        </td>
+                    </tr>
 
-                   <tr>
-                       <td>
-                <label for="studiengang">Studiengang:</label>
-                           </td>
-                    <td><select name="studiengang" size="1">
-                        <option value="UIB">UIB</option>
-                        <option value="IB">IB</option>
-                        <option value="IMB">IMB</option>
-                    </select>
-                   </td>
-                   </tr>
+                    <tr>
+                        <td>
+                            <label for="studiengang">Studiengang:</label>
+                        </td>
+                        <td><select name="studiengang" size="1">
+                            <option value="UIB">UIB</option>
+                            <option value="IB">IB</option>
+                            <option value="IMB">IMB</option>
+                        </select>
+                        </td>
+                    </tr>
 
-                   <tr>
-                       <td>
-                           <label for="messe">Messe:</label>
-                       </td>
-                       <td>
-                           <input type="radio" name="messe" value="CeBIT">CeBIT<br/>
-                           <input type="radio" name="messe" value="ConHIT">ConHIT<br/>
-                           <input type="radio" name="messe" value="WebTechCon">WebTech Con<br/>
-                       </td>
-                   </tr>
+                    <tr>
+                        <td>
+                            <label for="messe">Messe:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="messe" value="CeBIT">CeBIT<br/>
+                            <input type="radio" name="messe" value="ConHIT">ConHIT<br/>
+                            <input type="radio" name="messe" value="WebTechCon">WebTech Con<br/>
+                        </td>
+                    </tr>
                 </table>
             </div>
-         </div>
+        </div>
 
         <div id="content-right">
             <div id="messe-info">
                 <h2>Messe Infos</h2>
+
                 <p>
                     Bitte auf eine der Messen eurer Wahl klicken, um weitere Info's zu bekommen
                 </p>
-                <p>
+
+                <p id="links">
                     <a href="html/cebit.html">Cebit</a>
                 </p>
-                <p>
+
+                <p id="links">
                     <a href="html/conhit.html">ConHit</a>
                 </p>
-                <p>
+
+                <p id="links">
                     <a href="html/webtechcon.html">WebTech Con</a>
                 </p>
             </div>
-         </div>
+        </div>
     </div>
 </div>
-
-
 
 
 </body>
