@@ -4,16 +4,16 @@ body {
     font-family: Arial Black;
 }
 
-/***** GRUNDFORMATIERUNGEN *****/
+/***** GLOBALE FORMATIERUNGEN *****/
 
-h1{
+/*h1{
     font-size: 20px;
 }
 
 h2{
     font-size: 14px;
     text-align:center;
-}
+}*/
 
 td {
     vertical-align: top;
@@ -21,7 +21,17 @@ td {
 }
 
 p{
-    text-align: left;
+    font-size: 12px;
+    font-height: 12px;
+}
+
+.anmeldung{
+    font-size: 20px;
+}
+
+.messeInfos{
+    font-size: 14px;
+    text-align: center;
 }
 
 #links {
@@ -78,7 +88,7 @@ p{
 }
 
 #content-left {
-    width: 480px;
+    width: 400px;
     height: 200px;
     display: block;
     float: left;
@@ -97,12 +107,14 @@ p{
     border: 1px solid gold;
     display: block;
     float: right;
-    width: 495px;
+    width: 575px;
     height: 200px;
 }
 
 #messe-info {
+    width: 575px;
     border: 1px solid springgreen;
     display: block;
     float: right;
+    text-align: center;
 }
