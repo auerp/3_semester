@@ -25,76 +25,79 @@
     <div id="content">
         <div id="content-left">
             <div id="formular">
-                <table>
-                    <tr>
-                        <td>
-                            <label for="name">Nachname:</label>
-                        </td>
-                        <td>
-                            <input type="text" id="name" name="name"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="vorname">Vorname:</label>
-                        </td>
-                        <td>
-                            <input type="text" id="vorname" name="vorname">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="matrikelnr">Matrikelnummer:</label>
-                        </td>
-                        <td><input type="text" id="matrikelnr" name="matrikelnr"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="email">E-Mail Adresse:</label>
-                        </td>
-                        <td><input type="text" id="email" name="email"/>
-                        </td>
-                    </tr>
+                <form action="http://martinakraus.net/hsmannheim.php" method="get">
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="name">Nachname:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="name" name="name" size="25"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="vorname">Vorname:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="vorname" name="vorname" value="Bitte Vorname eingeben" size="25">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="matrikelnr">Matrikelnummer:</label>
+                            </td>
+                            <td><input type="text" id="matrikelnr" name="matrikelnr"
+                                       value="Bitte Matrikelnummer eingeben" size="25"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">E-Mail Adresse:</label>
+                            </td>
+                            <td><input type="text" id="email" name="email" size="25"/>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>
-                            <label for="handynummer">Handynummer:</label>
-                        </td>
-                        <td>
-                            <input type="text" id="handy" name="handy">
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>
+                                <label for="handynummer">Handynummer:</label>
+                            </td>
+                            <td>
+                                <input type="text" id="handy" name="handy" value="Bitte Handynummer eingeben" size="25">
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>
-                            <label for="studiengang">Studiengang:</label>
-                        </td>
-                        <td><select name="studiengang" size="1">
-                            <option value="UIB" selected="selected">UIB</option>
-                            <option value="IB">IB</option>
-                            <option value="IMB">IMB</option>
-                        </select>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>
+                                <label for="studiengang">Studiengang:</label>
+                            </td>
+                            <td><select name="studiengang" size="1">
+                                <option value="UIB" selected="selected">UIB</option>
+                                <option value="IB">IB</option>
+                                <option value="IMB">IMB</option>
+                            </select>
+                            </td>
+                        </tr>
 
-                    <tr>
-                        <td>
-                            <label for="messe">Messe:</label>
-                        </td>
-                        <td>
-                            <input type="radio" name="messe" value="CeBIT">CeBIT<br/>
-                            <input type="radio" name="messe" value="ConHIT">ConHIT<br/>
-                            <input type="radio" name="messe" value="WebTechCon">WebTech Con<br/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="submit" name="anmelden" value="Anmelden"/>
+                        <tr>
+                            <td>
+                                <label for="messe">Messe:</label>
+                            </td>
+                            <td>
+                                <input type="radio" name="messe" value="CeBIT">CeBIT<br/>
+                                <input type="radio" name="messe" value="ConHIT">ConHIT<br/>
+                                <input type="radio" name="messe" value="WebTechCon">WebTech Con<br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="submit" name="anmelden" value="Anmelden"/>
 
-                        </td>
-                    </tr>
-                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
             </div>
         </div>
 
