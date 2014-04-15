@@ -111,13 +111,15 @@ p {
     width: 575px;
     /*height: 200px;*/
     position:relative;
-}
-
-#messe-info {
-    width: 575px;
     position:relative;
-    /*border: 1px solid springgreen;*/
-    display: block;
-    float: right;
     text-align: center;
 }
+
+/*#messe-info {
+    width: 575px;
+
+    /*border: 1px solid springgreen;*/
+    /*display: block;
+    float: right;
+
+}*/
