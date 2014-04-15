@@ -20,19 +20,9 @@ p {
     font-height: 12px;
 }
 
-.anmeldung {
-    font-size: 20px;
-}
 
-.messeInfos {
-    font-size: 14px;
-    text-align: center;
-}
 
-#links {
-    text-align: center;
-    font-size: 16px;
-}
+
 
 /***** CONTAINER *****/
 
@@ -72,11 +62,6 @@ p {
     display: block;
     float: right;
 
-    /**right: 50px;    /** Abstand von rechts **/
-    /**position: absolute;**/
-    /**top: 15px;**/
-
-}
 
 /***** Inhalt - zwei spaltiges Layout *****/
 
@@ -123,3 +108,19 @@ p {
     float: right;
 
 }*/
+
+
+/***** KLASSEN *****/
+.anmeldung {
+    font-size: 20px;
+}
+
+.messeInfos {
+    font-size: 14px;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    font-size: 16px;
+}
