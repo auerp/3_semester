@@ -22,8 +22,6 @@ p {
 
 
 
-
-
 /***** CONTAINER *****/
 
 #container {
@@ -62,6 +60,11 @@ p {
     display: block;
     float: right;
 
+    /**right: 50px;    /** Abstand von rechts **/
+    /**position: absolute;**/
+    /**top: 15px;**/
+
+}
 
 /***** Inhalt - zwei spaltiges Layout *****/
 
@@ -95,8 +98,6 @@ p {
     float: right;
     width: 575px;
     /*height: 200px;*/
-    position:relative;
-    position:relative;
     text-align: center;
 }
 
@@ -109,8 +110,8 @@ p {
 
 }*/
 
+/*****KLASSEN *****/
 
-/***** KLASSEN *****/
 .anmeldung {
     font-size: 20px;
 }
@@ -123,4 +124,3 @@ p {
 .links {
     text-align: center;
     font-size: 16px;
-}
