@@ -1,0 +1,18 @@
+
+#header{
+    width: 1000px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+#header-left{
+    border: 1px solid deeppink;
+    font-size: 22px;
+    /*padding-right: 25px;*/
+
+}
+
+#header-right{
+    border: 1px solid blue;
+    text-align: right;
+}
