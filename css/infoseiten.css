@@ -1,3 +1,4 @@
+@charset "utf-8";
 
 #header{
     width: 1000px;
@@ -15,4 +16,13 @@
 #header-right{
     border: 1px solid blue;
     text-align: right;
+}
+
+#content{
+    border: 1px solid aquamarine;
+    font-size: 16px;
+}
+
+.picture-right{
+    float: right;
 }
