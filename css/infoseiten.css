@@ -9,29 +9,20 @@
 #header-left{
     font-size: 22px;
     padding-top:20px;
-    /*padding-right: 25px;*/
-
 }
 
 #header-right{
-
     text-align: right;
 }
 
 #content{
     text-align: justify;
-    padding-top: 120px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 120px 20px 20px 20px; /* Abstand von: oben, rechts, unten, links */
     font-size: 16px;
 }
 
 .picture-right{
     float: right;
-
-
-
 }
 
 .picture-left{

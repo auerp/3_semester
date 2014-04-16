@@ -2,13 +2,14 @@ body {
     font-size: 12px;
     font-weight: bold;
     font-family: Arial Black;
+
 }
 
 /***** GLOBALE FORMATIERUNGEN *****/
 
-h1, h2{
+h1, h2 {
 
-    }
+}
 
 td {
     vertical-align: top;
@@ -20,12 +21,9 @@ p {
     font-height: 12px;
 }
 
-
-
 /***** CONTAINER *****/
 
 #container {
-    position:relative;
     background-color: #99D9EA;
     width: 1000px;
     min-height: 400px;
@@ -36,12 +34,8 @@ p {
 
 #header {
     width: 1000px;
-    position: relative:
-    /*height: 125px;*/
-    /*border: 1px solid deeppink;*/
     display: block;
     float: left;
-    /**position: relative;**/
 }
 
 #header-left {
@@ -49,71 +43,43 @@ p {
     display: block;
     float: left;
     padding: 0 0 0 20px; /* Abstand von: oben, rechts, unten, links */
-    /*border: 1px solid red;*/
-
 }
 
 #header-right {
-    position: relative;
     margin: 5px 5px 0 0;
     width: 326px;
-    /**border: 1px solid blue;**/
     display: block;
     float: right;
     border: 1px solid #D8E3D7;
     box-shadow: black 1px 1px 3px 1px;
-    /**right: 50px;    /** Abstand von rechts **/
-    /**position: absolute;**/
-    /**top: 15px;**/
-
 }
 
 /***** Inhalt - zwei spaltiges Layout *****/
 
 #content {
-    /*border: 1px solid black;*/
-    /*height: 350px;*/
     background-color: #99D9EA;
-
 }
 
 #content-left {
-    position:relative;
     width: 400px;
-    /*height: 200px;*/
     display: block;
     float: left;
-    /*border: 1px solid darkgreen;*/
     margin-top: 10px;
 }
 
 #formular {
-    position:relative;
     display: block;
     float: left;
-    /*height: auto;*/
     padding-left: 20px;
-    /*border: 1px solid orchid;*/
 }
 
 #content-right {
     margin-top: 10px;
-    /*border: 1px solid gold;*/
     display: block;
     float: right;
     width: 575px;
-    /*height: 200px;*/
     text-align: center;
 }
-
-/*#messe-info {
-    width: 575px;
-
-    /*border: 1px solid springgreen;*/
-    /*display: block;
-    float: right;
-
-}*/
 
 /*****KLASSEN *****/
 
