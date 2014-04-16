@@ -54,12 +54,14 @@ p {
 }
 
 #header-right {
+    position: relative;
+    margin: 5px 5px 0 0;
     width: 326px;
     /**border: 1px solid blue;**/
     display: block;
     float: right;
     border: 1px solid #D8E3D7;
-    box-shadow: #D8E3D7 1px 1px 3px 1px;
+    box-shadow: black 1px 1px 3px 1px;
     /**right: 50px;    /** Abstand von rechts **/
     /**position: absolute;**/
     /**top: 15px;**/
