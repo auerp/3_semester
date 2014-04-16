@@ -9,6 +9,7 @@
 #header-left{
     border: 1px solid deeppink;
     font-size: 22px;
+    padding-top:20px;
     /*padding-right: 25px;*/
 
 }
@@ -25,4 +26,11 @@
 
 .picture-right{
     float: right;
+
+
+
+}
+
+.picture-left{
+    float: left;
 }
