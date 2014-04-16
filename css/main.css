@@ -23,10 +23,10 @@ p {
 
 /***** CONTAINER *****/
 
-#container {
+#container{
     background-color: #99D9EA;
     width: 1000px;
-    min-height: 400px;
+    /*min-height: 400px;*/
     margin: 0 auto;
 }
 
@@ -54,10 +54,9 @@ p {
     box-shadow: black 1px 1px 3px 1px;
 }
 
-/***** Inhalt - zwei spaltiges Layout *****/
+/***** Inhalt - zwei spaltig *****/
 
 #content {
-    background-color: #99D9EA;
 }
 
 #content-left {
