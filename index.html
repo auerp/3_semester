@@ -32,7 +32,8 @@
                                 <label for="name">Name:</label>
                             </td>
                             <td>
-                                <input type="text" id="name" name="name" value="Bitte Name eingeben" size="25"/>
+                                <input type="text" id="name" name="name" value="Bitte Name eingeben" size="25"
+                                       onFocus="if(this.value=='Bitte Name eingeben') this.value=''"/>
                             </td>
                         </tr>
                         <tr>
@@ -40,7 +41,8 @@
                                 <label for="vorname">Vorname:</label>
                             </td>
                             <td>
-                                <input type="text" id="vorname" name="vorname" value="Bitte Vorname eingeben" size="25">
+                                <input type="text" id="vorname" name="vorname" value="Bitte Vorname eingeben" size="25"
+                                       onFocus="if(this.value=='Bitte Vorname eingeben') this.value=''"/>
                             </td>
                         </tr>
                         <tr>
@@ -48,14 +50,17 @@
                                 <label for="matrikelnr">Matrikelnummer:</label>
                             </td>
                             <td><input type="text" id="matrikelnr" name="matrikelnr"
-                                       value="Bitte Matrikelnummer eingeben" size="25"/>
+                                       value="Bitte Matrikelnummer eingeben" size="25"
+                                       onFocus="if(this.value=='Bitte Matrikelnummer eingeben') this.value=''"/>
                             </td>
                         </tr>
                         <tr>
                             <td>
                                 <label for="email">E-Mail Adresse:</label>
                             </td>
-                            <td><input type="text" id="email" name="email" value="Bitte E-Mail Adresse eingeben" size="25"/>
+                            <td><input type="text" id="email" name="email" value="Bitte E-Mail Adresse eingeben"
+                                       size="25"
+                                       onFocus="if(this.value=='Bitte E-Mail Adresse eingeben') this.value=''"/>
                             </td>
                         </tr>
 
@@ -64,7 +69,8 @@
                                 <label for="handynummer">Handynummer:</label>
                             </td>
                             <td>
-                                <input type="text" id="handy" name="handy" value="Bitte Handynummer eingeben" size="25">
+                                <input type="text" id="handy" name="handy" value="Bitte Handynummer eingeben" size="25"
+                                       onFocus="if(this.value=='Bitte Handynummer eingeben') this.value=''"/>
                             </td>
                         </tr>
 
@@ -104,23 +110,25 @@
 
         <div id="content-right">
 
-                <span class="messeInfos">Messe Infos</span>
+            <span class="messeInfos">Messe Infos</span>
 
-                <p>
-                    Bitte auf eine der Messen eurer Wahl klicken, um weitere Info's zu bekommen
-                </p>
-
-                <p class="links">
-                    <a href="html/cebit.html">Cebit</a>
+            <p>
+                Bitte auf eine der Messen eurer Wahl klicken, um weitere Info's zu bekommen
             </p>
+
+            <p class="links">
+                <a href="html/cebit.html">Cebit</a>
+            </p>
+
             <p class="links">
 
 
-                    <a href="html/coonhit.html">ConHit</a>
+                <a href="html/coonhit.html">ConHit</a>
             </p>
+
             <p class="links">
-                    <a href="html/webtechcon.html">WebTech Con</a>
-                </p>
+                <a href="html/webtechcon.html">WebTech Con</a>
+            </p>
 
         </div>
     </div>
