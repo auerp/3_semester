@@ -25,7 +25,7 @@ p {
 
 #container{
     background-color: #99D9EA;
-    width: 1000px;
+    width: 75%;
     /*min-height: 400px;*/
     margin: 0 auto;
 }
@@ -33,7 +33,7 @@ p {
 /***** HEADER *****/
 
 #header {
-    width: 1000px;
+    width: 100%;
     display: block;
     float: left;
 }
