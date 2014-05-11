@@ -40,15 +40,10 @@ ul#liste li {
     padding: 10px;
 }
 
-#header {
+/*#header {
     border-collapse: collapse;
     border: 2px solid red;
-}
-
-#header2 {
-    margin-left: 350px;
-    border: 2px solid green;
-}
+}*/
 
 #header-left {
     margin-top: 50px;
@@ -60,12 +55,4 @@ ul#liste li {
 td {
     border: 1px black solid;
     font-size: 15px;
-}
-
-#center {
-    margin-left: 350px;
-    text-align: left;
-    border-collapse: collapse;
-    border: 2px solid #4F4F4F;
-    border: 2px sandybrown;
 }
