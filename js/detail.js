@@ -3,7 +3,9 @@
  */
 
 
-/*Json Objekt erzeugen*/
+/* JSONObjekt erzeugen */
 var JSONObject = {
+    "header":"Name Vorname Studiengang email"};
 
-}
+/* JSONObjekt übergeben */
+    document.getElementById("header").innerHTML=JSONObject.header;
