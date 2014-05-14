@@ -6,15 +6,10 @@ body {
 }
 
 /***** GLOBALE FORMATIERUNGEN *****/
-
-h1, h2 {
-
-}
-
-td {
+/*td {
     vertical-align: top;
     font-size: 12px;
-}
+}*/
 
 p {
     font-size: 12px;
@@ -92,4 +87,9 @@ p {
 .links {
     text-align: center;
     font-size: 16px !important;
+}
+
+.tabelleIndex{
+    vertical-align: top;
+    font-size: 12px;
 }
