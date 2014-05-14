@@ -1,4 +1,10 @@
-/* Universal-Selektor */
+/*** GRUND FORMATIERUNGEN ***/
+table{
+    border-collapse: collapse; /*durchgehende Linie*/
+}
+
+
+/*** UNIVERSAL-SELEKTOR ***/
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +26,7 @@
 
 /*** KLASSEN ***/
 .tabellenInhalt{
-    border: 1px black solid;
+    width: 200px;
+    border: 1px solid #000;
     font-size: 15px;
 }
