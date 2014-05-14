@@ -1,0 +1,69 @@
+#menue{
+}
+
+ul#menue {
+    list-style-type: none;
+    padding: 0 0 24px 30px;
+
+}
+
+ul#menue li {
+    float: left;
+    background-color: #A1FF8A;
+    border: 1px solid #0099FF;
+}
+
+ul#menue li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 2px 20px;
+    width: auto;
+}
+
+/* Mouseover Effekt */
+ul#menue li a:hover {
+    color: #fff;
+    background-color: #256470;
+}
+
+ul#menue li:hover ul{
+    visibility:visible;
+}
+
+/* 2. Ebene */
+ul#menue ul {
+    list-style: none;
+    display:none; /*blendet Untermneüs aus*/
+}
+
+ul#menue li:hover ul {
+    left: -40px
+}
+
+ul#menue li ul li {
+    float: none !important;
+}
+
+ul#navigation li ul li a {
+    width: 76px;
+    display: block;
+}
+
+/* Styles für Menue Links */
+#menue li#ebene1 a {
+    color: #000;
+}
+
+/*#menue #ebene1 a {
+    float: left;
+    display: block;
+    color: pink;
+    text-decoration: none;
+    padding: 4px 10px;
+}
+
+#menue li#ebene1 {
+    border-bottom: 1px solid #FFF;
+    background-color: #FFF;
+}*/
