@@ -1,6 +1,12 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+}
 
 #container{
-    background-color: yellow;
+    margin: 0 auto;
 }
 
 /*#header {
@@ -15,13 +21,15 @@
 }
 
 #menue{
-    float:left;
+    text-align: center;
+    margin-top: 20px;
     border: 1px solid red;
+    float:left;
 }
 
 #inhalt {
     border-width: 0 1px 1px 1px;
-    border-color: #0099FF;
+    border-color: yellow;
     border-style: solid;
     padding: 10px;
 }

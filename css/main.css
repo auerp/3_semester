@@ -28,6 +28,8 @@ p {
     width: 75%;
     /*min-height: 400px;*/
     margin: 0 auto;
+    overflow:hidden;
+    clear:both;
 }
 
 /***** HEADER *****/
@@ -55,10 +57,6 @@ p {
 }
 
 /***** Inhalt - zwei spaltig *****/
-
-#content {
-}
-
 #content-left {
     width: 400px;
     display: block;
