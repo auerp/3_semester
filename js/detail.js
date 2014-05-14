@@ -9,3 +9,13 @@ var JSONObject = {
 
 /* JSONObjekt übergeben */
     document.getElementById("header").innerHTML=JSONObject.header;
+
+
+
+
+
+function test(){
+
+    alert("test");
+
+}
