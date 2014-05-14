@@ -1,8 +1,9 @@
+/* Universal-Selektor */
 * {
-    margin:0;
-    padding:0;
-    list-style:none;
-    text-decoration:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 /*#header {
@@ -14,61 +15,85 @@
     margin-top: 50px;
     text-align: center;
     font-size: 20px;
+    border: 1px solid yellow;
 }
 
-#menue{
-    text-align: center;
-    margin-top: 20px;
-    border: 1px solid red;
-    float:left;
-}
-
-#inhalt {
-    border-width: 0 1px 1px 1px;
-    border-color: yellow;
-    border-style: solid;
-    padding: 10px;
-}
-
-/*
-ul#liste {
+ul#menue {
     list-style-type: none;
     padding: 0 0 24px 30px;
-    border-bottom: 1px solid #0099FF;
 }
 
-ul#liste li {
+ul#menue li {
     float: left;
-    height: 21px;
+    /*height: 21px;*/
     background-color: #A1FF8A;
-    margin: 2px 2px 0 2px;
+    /*margin: 1px;*/
     border: 1px solid #0099FF;
+    position: relative;
 }
 
-#liste a {
+ul#menue li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 2px 20px;
+    width: auto;
+}
+
+/* Mouseover Effekt 1. Ebene */
+ul#menue li a:hover {
+    color: #fff;
+    background-color: #256470;
+}
+
+/* 2. Ebene */
+ul#menue ul {
+    list-style: none;
+    /*left: -9999px /* you may even use "display: none"*/
+    position:absolute;
+    Bei Klick soll sich das untermenü erst öffnen!!!!!!!!!!!
+}
+
+ul#menue li:hover ul {
+    left: -40px
+}
+
+ul#menue li ul li {
+    float: none !important;
+}
+
+ul#navigation li ul li a {
+    width: 76px;
+}
+
+/* Styles für Menue Links */
+#menue li#ebene1 a {
+    color: #000;
+}
+
+/*#menue #ebene1 a {
     float: left;
     display: block;
-    color: #666;
+    color: pink;
     text-decoration: none;
     padding: 4px 10px;
 }
 
-#liste a:hover {
-    background: #FFF;
-}
-
-#liste li#hier {
+#menue li#ebene1 {
     border-bottom: 1px solid #FFF;
     background-color: #FFF;
+}*/
+
+
+
+
+#inhalt {
+    border-width: 0 1px 1px 1px;
+    border-color: greenyellow;
+    border-style: solid;
+    padding: 10px;
+
 }
-
-#liste li#hier a {
-    color: #000;
-}
-
-
-*/
-
 
 td {
     border: 1px black solid;

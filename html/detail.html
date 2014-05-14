@@ -15,14 +15,9 @@
     <script src="../js/detail.js" type="text/javascript"></script>
 
 
-
-
-
     <title>Detail</title>
 </head>
 <body>
-
-<button type="submit" onclick="test()"> Hallo</button>
 
 <div id="container">
     <div id="header">
@@ -34,44 +29,48 @@
         </div>
     </div>
 
-    <div id="menue">
-        <table id="table1">
+    <div>
+        <!--<table id="table1">
             <tr>
                 <td>Kosten der Messe</td>
                 <td>Teilnehmer</td>
             </tr>
         </table>
+        -->
+
+        <ul id="menue">
+            <li id="ebene1"><a href="#">Kosten der Messe</a></li>
+            <li id="ebene1"><a href="#">Teilnehmer</a></li>
+            <ul>
+                <li><a href="#">Cebit</a></li>
+                <li><a href="#">Conhit</a></li>
+                <li><a href="#">WebTech Con</a></li>
+            </ul>
+        </ul>
     </div>
 
+    <div id="inhalt">
+        <table>
+            <tr>
+                <td>Messe</td>
+                <td>Selbstkosten</td>
+            </tr>
+            <tr>
+                <td>CeBIT</td>
+                <td>15€</td>
+            </tr>
+            <tr>
+                <td>ConHit</td>
+                <td>50€</td>
+            </tr>
+            <tr>
+                <td>WebTech Con</td>
+                <td>300€</td>
+            </tr>
+        </table>
+    </div>
+    </ul>
 
-    <!--
-    <ul>
-        <ul id="liste">
-            <li id="hier"><a href="#">Kosten der Messe</a></li>
-            <li><a href="#">Teilnehmer</a></li>
-        </ul>
-
-        <div id="inhalt">
-            <table>
-                <tr>
-                    <td>Messe</td>
-                    <td>Selbstkosten</td>
-                </tr>
-                <tr>
-                    <td>CeBIT</td>
-                    <td>15€</td>
-                </tr>
-                <tr>
-                    <td>ConHit</td>
-                    <td>50€</td>
-                </tr>
-                <tr>
-                    <td>WebTech Con</td>
-                    <td>300€</td>
-                </tr>
-            </table>
-        </div>
-        -->
 </div>
 </body>
 </html>
