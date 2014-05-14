@@ -34,11 +34,12 @@ ul#main_nav li ul li{   /*Listenelemente*/
 }
 
 ul#main_nav li a:link, a:visited{
+    background-image: linear-gradient(#FFFFFF 21%, steelblue 100%);
     display:block;
     width:auto;
     font-weight:bold;
     color:#000;
-    background-color: steelblue;
+    /*background-color: steelblue;*/
     text-align:center;
     padding:4px;
     text-decoration:none;
