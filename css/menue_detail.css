@@ -1,104 +1,66 @@
 #main_nav{
-    padding: 3px 0;
-    margin-left: 0;
-    margin-bottom: 0;
+    border: 1px solid pink;
+    line-height: 21px;
+    margin:0;
+    padding:0;
+    background-color: steelblue;
+    float:left;
+    position: relative;
+    left: 15%;
+}
+
+ul#main_nav ul {
     list-style-type: none;
-    position: relative;
-    left: 15%;
-}
-
-#main_nav li{
-    display: inline;
     margin: 0;
-
-}
-
-#main_nav li a{
-    text-decoration:none;
-    padding: 3px 7px;
-    margin-right: 3px;
-    border: 1px solid #778;
-    color: black;
-    background: white;
-}
-
-/* Mouseover */
-#main_nav li a:hover{
-    color:#A1FF8A;
-    background: #666;
-}
-
-/*
-#main_nav li.sub_nav a{
-    background-color: #EFFADC;
-    border-color: black;
-}
-*/
-
-#menuecontent{
-    position: relative;
-    left: 15%;
-    border: 1px solid #778;
-    height: 100% /*IE7 beta2 fix*/
-}
-
-#menuecontent ul{
     padding: 0;
-    margin: 0;
-    list-style-type: none;
-    display: none;
 }
 
-#menuecontent ul li{
-    display: inline;
+ul#main_nav li{
+    border: 1px solid yellow;
+    list-style: none;
+    float:left;
 }
 
-#menuecontent ul.sub_nav{ /*selected 2nd level content*/
-    display: block;
+/** 2. EBENE **/
+
+ul#main_nav li ul{
+   border: 1px solid red;
+   /* display: none; /*2. Ebene ausblenden*/
 }
 
-/* Submenue */
-#menuecontent ul li a{
-    border-right: 1px solid #778;
-    color: black;
-    padding: 2px 5px;
-    display: block;
-    float: left;
-    text-decoration: none;
+ul#main_nav li ul li{   /*Listenelemente*/
+    border: 1px solid green;
+
 }
 
-#menuecontent ul li a:hover{
-    background: #666;
+ul#main_nav li a:link, a:visited{
+    display:block;
+    width:auto;
+    font-weight:bold;
+    color:#000;
+    background-color: steelblue;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+/** MENUE STYLES **/
+ul#main_nav li a:hover, a:active{
     color:#A1FF8A;
+    background: #666;
 }
 
-.clearfix:after{ /*Cleart die floats*/
+ul#sub_nav {
+    float:left;
+}
+
+
+/** CLEARING **/
+.clearfix:after{ /*Cleart die floats */
     content: ".";
     display: block;
     height: 0;
     clear: both;
     visibility: hidden;
 }
-
-.clearfix{
-    display: inline-table;
-}
-
-
-/* Hides from IE-mac \*/
-* html .clearfix {height: 1%;}
-.clearfix {display: block;}
-/* End hide from IE-mac */
-
-
-
-
-
-
-
-
-
-
-
-
-
