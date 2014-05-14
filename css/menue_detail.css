@@ -1,38 +1,96 @@
-ul#menue {
-     list-style-type: none;
-     padding: 0 0 24px 30px;
-     border-bottom: 1px solid #0099FF;
+#main_nav{
+    padding: 3px 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    font: bold 12px Verdana;
+    list-style-type: none;
+    position: relative;
+    left: 25%;
 }
 
-ul#menue li {
-     float: left;
-     height: 21px;
-     background-color: #A1FF8A;
-     margin: 2px 2px 0 2px;
-     border: 1px solid #0099FF;
-}
-
-#menue a {
-     float: left;
-     display: block;
-     color: #666;
-     text-decoration: none;
-     padding: 4px 10px;
-}
-
-#menue a:hover {
-     background: #FFF;
+#main_nav li{
+    display: inline;
+    margin: 0;
 
 }
 
-#menue li {
-     border-bottom: 1px solid #FFF;
-     background-color: #FFF;
+#main_nav li a{
+    text-decoration:none;
+    padding: 3px 7px;
+    margin-right: 3px;
+    border: 1px solid #778;
+    color: black;
+    background: white;
 }
 
-#menue li a {
-     color: #000;
+/* Mouseover */
+#main_nav li a:hover{
+    color:#A1FF8A;
+    background: #666;
 }
+
+#main_nav li.sub_nav a{
+    background-color: #EFFADC;
+    border-color: navy;
+}
+
+#menuecontent{
+    position: relative;
+    left: 25%;
+    border: 1px solid #778;
+    background-color: #EFFADC;
+    height: 100% /*IE7 beta2 fix*/
+}
+
+#menuecontent ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: none;
+}
+
+#menuecontent ul li{
+    display: inline;
+}
+
+#menuecontent ul.sub_nav{ /*selected 2nd level content*/
+    display: block;
+}
+
+#menuecontent ul li a{
+    border-right: 1px solid #778;
+    color: navy;
+    padding: 2px 5px;
+    display: block;
+    float: left;
+    text-decoration: none;
+}
+
+#menuecontent ul li a:hover{
+    background: #666;
+    color:#A1FF8A;
+}
+
+.clearfix:after{ /*Cleart die floats*/
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix{
+    display: inline-table;
+}
+
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+
 
 
 
