@@ -1,69 +1,45 @@
-#menue{
-}
-
 ul#menue {
-    list-style-type: none;
-    padding: 0 0 24px 30px;
-
+     list-style-type: none;
+     padding: 0 0 24px 30px;
+     border-bottom: 1px solid #0099FF;
 }
 
 ul#menue li {
-    float: left;
-    background-color: #A1FF8A;
-    border: 1px solid #0099FF;
+     float: left;
+     height: 21px;
+     background-color: #A1FF8A;
+     margin: 2px 2px 0 2px;
+     border: 1px solid #0099FF;
 }
 
-ul#menue li a {
-    display: block;
-    text-decoration: none;
-    color: #000;
-    padding: 2px 20px;
-    width: auto;
+#menue a {
+     float: left;
+     display: block;
+     color: #666;
+     text-decoration: none;
+     padding: 4px 10px;
 }
 
-/* Mouseover Effekt */
-ul#menue li a:hover {
-    color: #fff;
-    background-color: #256470;
+#menue a:hover {
+     background: #FFF;
+
 }
 
-ul#menue li:hover ul{
-    visibility:visible;
+#menue li {
+     border-bottom: 1px solid #FFF;
+     background-color: #FFF;
 }
 
-/* 2. Ebene */
-ul#menue ul {
-    list-style: none;
-    display:none; /*blendet Untermneüs aus*/
+#menue li a {
+     color: #000;
 }
 
-ul#menue li:hover ul {
-    left: -40px
-}
 
-ul#menue li ul li {
-    float: none !important;
-}
 
-ul#navigation li ul li a {
-    width: 76px;
-    display: block;
-}
 
-/* Styles für Menue Links */
-#menue li#ebene1 a {
-    color: #000;
-}
 
-/*#menue #ebene1 a {
-    float: left;
-    display: block;
-    color: pink;
-    text-decoration: none;
-    padding: 4px 10px;
-}
 
-#menue li#ebene1 {
-    border-bottom: 1px solid #FFF;
-    background-color: #FFF;
-}*/
+
+
+
+
