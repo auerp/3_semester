@@ -2,10 +2,9 @@
     padding: 3px 0;
     margin-left: 0;
     margin-bottom: 0;
-    font: bold 12px Verdana;
     list-style-type: none;
     position: relative;
-    left: 25%;
+    left: 15%;
 }
 
 #main_nav li{
@@ -29,16 +28,17 @@
     background: #666;
 }
 
+/*
 #main_nav li.sub_nav a{
     background-color: #EFFADC;
-    border-color: navy;
+    border-color: black;
 }
+*/
 
 #menuecontent{
     position: relative;
-    left: 25%;
+    left: 15%;
     border: 1px solid #778;
-    background-color: #EFFADC;
     height: 100% /*IE7 beta2 fix*/
 }
 
@@ -57,9 +57,10 @@
     display: block;
 }
 
+/* Submenue */
 #menuecontent ul li a{
     border-right: 1px solid #778;
-    color: navy;
+    color: black;
     padding: 2px 5px;
     display: block;
     float: left;
