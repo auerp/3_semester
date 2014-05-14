@@ -1,21 +1,28 @@
-/**
- * Created by pauer on 13.05.14.
- */
 
 
-/* JSONObjekt erzeugen */
-var JSONObject = {
-    "header":"Name Vorname Studiengang email"};
+var cebit= {
+    messename: "CeBIT",
+    kosten: "50€"
+ };
 
-/* JSONObjekt übergeben */
-    document.getElementById("header").innerHTML=JSONObject.header;
+var conhit ={
+    messename: "ConHIT",
+    kosten: "30€"
+};
+
+var webtech ={
+    messename: "WebTeCH",
+    kosten: "300€"
+};
 
 
+function auslesen(){
+    document.getElementById("cebit").innerHTML=cebit.messename;
+    document.getElementById("kostencebit").innerHTML=cebit.kosten;
 
+    document.getElementById("conhit").innerHTML=conhit.messename;
+    document.getElementById("kostenconhit").innerHTML=conhit.kosten;
 
-
-function test(){
-
-    alert("test");
-
+    document.getElementById("webtech").innerHTML=webtech.messename;
+    document.getElementById("kostenwebtech").innerHTML=webtech.kosten;
 }

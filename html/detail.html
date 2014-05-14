@@ -12,13 +12,15 @@
     <link rel="stylesheet" type="text/css" href="../css/menue_detail.css">
 
     <!-- Javascript Datei laden -->
-    <script src="textfelder.js" type="text/javascript"></script>
+    <script src="../js/textfelder.js" type="text/javascript"></script>
     <script src="../js/detail.js" type="text/javascript"></script>
 
 
     <title>Detail</title>
 </head>
 <body>
+
+
 
 <div id="container">
     <div id="header">
@@ -50,25 +52,28 @@
     <div id="inhalt">
         <table>
             <tr>
-                <td>Messe</td>
-                <td>Selbstkosten</td>
+                <td id="hmesse">Messe</td>
+                <td id="hkosten">Selbstkosten</td>
             </tr>
             <tr>
-                <td>CeBIT</td>
-                <td>15€</td>
+                <td id="cebit"></td>
+                <td id="kostencebit"></td>
             </tr>
             <tr>
-                <td>ConHit</td>
-                <td>50€</td>
+                <td id="conhit"></td>
+                <td id="kostenconhit"></td>
             </tr>
             <tr>
-                <td>WebTech Con</td>
-                <td>300€</td>
+                <td id="webtech"></td>
+                <td id="kostenwebtech"></td>
             </tr>
         </table>
     </div>
     </ul>
 
 </div>
+
+<input type="button" value="Auslesen" onclick="auslesen();">
+
 </body>
 </html>

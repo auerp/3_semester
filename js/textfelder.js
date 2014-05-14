@@ -1,8 +1,9 @@
-function test() {
-    alert('Hallo Welt');
+function feldLeeren(){
+    this.value.reset();
+
 }
 
-function wechsle(a, b) {
-    top['Index'].document.location.href = a;
-    top['Detail'].document.location.href = b;
+function feldLeeren2(){
+    document.textfelder.action;
+    document.textfelder.reset();
 }
