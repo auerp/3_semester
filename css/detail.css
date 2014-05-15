@@ -1,5 +1,5 @@
 /*** GRUND FORMATIERUNGEN ***/
-table{
+table {
     border-collapse: collapse; /*durchgehende Linie*/
 }
 
@@ -17,32 +17,33 @@ table{
     font-size: 20px;
 }
 
-#inhalt {
+#tableKosten {
     padding: 10px 0 10px 0px;
-    text-align:center;
-    margin-left:auto;
-    margin-right: auto;
-    float:left;
+    text-align: center;
+    float: left;
+    margin: 0 auto;
 }
 
-#tabelleTeilnehmer{
+#tableTeilnehmer {
     text-align: center;
     padding: 10px 0 10px 0px;
-    margin-left:auto;
-    margin-right: auto;
-    float:left;
+    float: left;
+    margin: 0 auto;
 }
+
 
 /*** KLASSEN ***/
-.tabellenInhalt{
+.tabellenInhalt {
     width: 200px;
     border: 1px solid #000;
-    font-size: 15px;
+    font-size: 13px;
+    margin: 0 auto;
 }
 
-.tabelleTeilnehmer{
+.tabelleTeilnehmer {
     width: 250px;
     border: 1px solid #000;
-    font-size: 15px;
+    font-size: 13px;
+    margin: 0 auto;
 }
 

@@ -2,29 +2,24 @@ body {
     font-size: 12px;
     font-weight: bold;
     font-family: Arial Black;
-
 }
 
 /***** GLOBALE FORMATIERUNGEN *****/
-/*td {
-    vertical-align: top;
-    font-size: 12px;
-}*/
-
 p {
     font-size: 12px;
     font-height: 12px;
 }
 
+
 /***** CONTAINER *****/
 
-#container{
+#container {
     background-color: #99D9EA;
     width: 75%;
     /*min-height: 400px;*/
     margin: 0 auto;
-    overflow:hidden;
-    clear:both;
+    overflow: hidden;
+    clear: both;
 }
 
 /***** HEADER *****/
@@ -89,7 +84,7 @@ p {
     font-size: 16px !important;
 }
 
-.tabelleIndex{
+.tabelleIndex {
     vertical-align: top;
     font-size: 12px;
 }

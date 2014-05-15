@@ -32,18 +32,18 @@
 
     <div id="menue">
         <ul id="main_nav">
-            <li onclick="auslesenKosten(); ausblenden('tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('inhalt')">
+            <li onclick="auslesenKosten(); ausblenden('tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
                 <a href="#">Kosten der Messe</a></li>
             <li onclick="auslesenTeilnehmer()"><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
                     <li id="cebitDetail"
-                        onclick="auslesenCebitTeilnehmer(); ausblenden('inhalt', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
+                        onclick="auslesenCebitTeilnehmer(); ausblenden('tableKosten', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
                         <a href="#">Cebit</a></li>
                     <li id="conhitDetail"
-                        onclick="auslesenConhitTeilnehmer(); ausblenden('inhalt', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleConhitTeilnehmer')">
+                        onclick="auslesenConhitTeilnehmer(); ausblenden('tableKosten', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleConhitTeilnehmer')">
                         <a href="#">Conhit</a></li>
                     <li id="webtechDetail"
-                        onclick="auslesenWebtechTeilnehmer(); ausblenden('inhalt','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer'); einblenden('tabelleWebtechTeilnehmer')">
+                        onclick="auslesenWebtechTeilnehmer(); ausblenden('tableKosten','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer'); einblenden('tabelleWebtechTeilnehmer')">
                         <a href="#">WebTech Con</a></li>
                 </ul>
             </li>
@@ -52,7 +52,7 @@
     <div class="clearfix">
     </div>
 
-    <div id="inhalt">
+    <div id="tableKosten">
         <table>
             <tr>
                 <td id="hmesse" class="tabellenInhalt"></td>
@@ -73,8 +73,8 @@
         </table>
     </div>
 
-    <div id="tabelleTeilnehmer">
-        <div id="tabelleCebitTeilnehmer" onclick="ausblenden('inhalt')">
+    <div id="tableTeilnehmer">
+        <div id="tabelleCebitTeilnehmer" onclick="ausblenden('tableKosten')">
             <table>
                 <tr>
                     <td id="cebitTeilnehmer1name" class="tabelleTeilnehmer"></td>
