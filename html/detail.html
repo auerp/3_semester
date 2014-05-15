@@ -35,9 +35,9 @@
             <li onclick="auslesenKosten()"><a href="#">Kosten der Messe</a></li>
             <li onclick="auslesenTeilnehmer()"><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
-                    <li id="cebitDetail" onclick="auslesenCebitTeilnehmer(); ausblenden('inhalt')"><a href="#">Cebit</a></li>
-                    <li id="conhitDetail" onclick="auslesenConhitTeilnehmer()"><a href="#">Conhit</a></li>
-                    <li id="webtechDetail" onclick="auslesenWebtechTeilnehmer()"><a href="#">WebTech Con</a></li>
+                    <li id="cebitDetail" onclick="auslesenCebitTeilnehmer(); ausblenden('inhalt', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer')"><a href="#">Cebit</a></li>
+                    <li id="conhitDetail" onclick="auslesenConhitTeilnehmer(); ausblenden('inhalt', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer')"><a href="#">Conhit</a></li>
+                    <li id="webtechDetail" onclick="auslesenWebtechTeilnehmer(); ausblenden('inhalt','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer')"><a href="#">WebTech Con</a></li>
                 </ul>
             </li>
         </ul>
