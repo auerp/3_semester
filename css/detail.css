@@ -37,6 +37,13 @@ table{
     left: 15%;
 }
 
+#tabelleWebtechTeilnehmer {
+    text-align: center;
+    padding: 10px 0 10px 0px;
+    position:relative;
+    left: 15%;
+}
+
 
 /*** KLASSEN ***/
 .tabellenInhalt{

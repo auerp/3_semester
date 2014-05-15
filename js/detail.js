@@ -149,6 +149,46 @@ function auslesenConhitTeilnehmer(){
     document.getElementById("conhitTeilnehmer1vorname").innerHTML = conhitTeilnehmer1.vorname;
     document.getElementById("conhitTeilnehmer1studiengang").innerHTML = conhitTeilnehmer1.studiengang;
     document.getElementById("conhitTeilnehmer1email").innerHTML = conhitTeilnehmer1.email;
+
+    document.getElementById("conhitTeilnehmer2name").innerHTML = conhitTeilnehmer2.name;
+    document.getElementById("conhitTeilnehmer2vorname").innerHTML = conhitTeilnehmer2.vorname;
+    document.getElementById("conhitTeilnehmer2studiengang").innerHTML = conhitTeilnehmer2.studiengang;
+    document.getElementById("conhitTeilnehmer2email").innerHTML = conhitTeilnehmer2.email;
+
+    document.getElementById("conhitTeilnehmer3name").innerHTML = conhitTeilnehmer3.name;
+    document.getElementById("conhitTeilnehmer3vorname").innerHTML = conhitTeilnehmer3.vorname;
+    document.getElementById("conhitTeilnehmer3studiengang").innerHTML = conhitTeilnehmer3.studiengang;
+    document.getElementById("conhitTeilnehmer3email").innerHTML = conhitTeilnehmer3.email;
+
+    document.getElementById("conhitTeilnehmer4name").innerHTML = conhitTeilnehmer4.name;
+    document.getElementById("conhitTeilnehmer4vorname").innerHTML = conhitTeilnehmer4.vorname;
+    document.getElementById("conhitTeilnehmer4studiengang").innerHTML = conhitTeilnehmer4.studiengang;
+    document.getElementById("conhitTeilnehmer4email").innerHTML = conhitTeilnehmer4.email;
+}
+
+function auslesenWebtechTeilnehmer(){
+    document.getElementById("webtechTeilnehmer1name").innerHTML = webtechTeilnehmer1.name;
+    document.getElementById("webtechTeilnehmer1vorname").innerHTML = webtechTeilnehmer1.vorname;
+    document.getElementById("webtechTeilnehmer1studiengang").innerHTML = webtechTeilnehmer1.studiengang;
+    document.getElementById("webtechTeilnehmer1email").innerHTML = webtechTeilnehmer1.email;
+
+    document.getElementById("webtechTeilnehmer2name").innerHTML = webtechTeilnehmer2.name;
+    document.getElementById("webtechTeilnehmer2vorname").innerHTML = webtechTeilnehmer2.vorname;
+    document.getElementById("webtechTeilnehmer2studiengang").innerHTML = webtechTeilnehmer2.studiengang;
+    document.getElementById("webtechTeilnehmer2email").innerHTML = webtechTeilnehmer2.email;
+
+    document.getElementById("webtechTeilnehmer3name").innerHTML = webtechTeilnehmer3.name;
+    document.getElementById("webtechTeilnehmer3vorname").innerHTML = webtechTeilnehmer3.vorname;
+    document.getElementById("webtechTeilnehmer3studiengang").innerHTML = webtechTeilnehmer3.studiengang;
+    document.getElementById("webtechTeilnehmer3email").innerHTML = webtechTeilnehmer3.email;
+
+    document.getElementById("webtechTeilnehmer4name").innerHTML = webtechTeilnehmer4.name;
+    document.getElementById("webtechTeilnehmer4vorname").innerHTML = webtechTeilnehmer4.vorname;
+    document.getElementById("webtechTeilnehmer4studiengang").innerHTML = webtechTeilnehmer4.studiengang;
+    document.getElementById("webtechTeilnehmer4email").innerHTML = webtechTeilnehmer4.email;
+
+
+
 }
 
 /*
