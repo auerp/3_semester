@@ -34,9 +34,6 @@ function auslesenKosten() {
     document.getElementById("kostenwebtech").innerHTML = webtech.kosten;
 }
 
-element.classList.remove()
-
-element.classList.add()
 
 
 /* JSON-Objekte für Tabelle "Teilnehmer" erstellen*/
@@ -192,13 +189,14 @@ function auslesenWebtechTeilnehmer(){
 }
 
 function ausblenden(){
-    alert("HALLO DU");
+
     for (var i = 0; i < arguments.length; i++){
 
         var element = document.getElementById(arguments[i]);
-        element.style.visibility='none';
+        element.style.display='none';
 
     }
+    alert("HALLO DU");
 }
 
 /*
