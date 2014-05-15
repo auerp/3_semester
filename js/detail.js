@@ -192,7 +192,7 @@ function auslesenWebtechTeilnehmer(){
 }
 
 function ausblenden(){
-    alert("HALLO DU DA");
+    alert("HALLO DU");
     for (var i = 0; i < arguments.length; i++){
 
         var element = document.getElementById(arguments[i]);
