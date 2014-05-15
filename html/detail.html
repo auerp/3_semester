@@ -31,12 +31,12 @@
     </div>
 
     <div id="menue">
-        <ul id="main_nav">
+        <ul class="main_nav">
             <li onclick="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
                 <a href="#">Kosten der Messe</a></li>
             <li onclick="ausblenden('tableKosten'); einblenden('cebitDetail', 'conhitDetail','webtechDetail')"><a
                     href="#">Teilnehmer</a>
-                <ul id="sub_nav">
+                <ul class="sub_nav">
                     <li id="cebitDetail"
                         onclick="auslesenCebitTeilnehmer(); ausblenden('tableKosten', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
                         <a href="#">Cebit</a></li>
