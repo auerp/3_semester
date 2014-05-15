@@ -212,7 +212,7 @@ function einblenden() {
  submenuAktiv.classList.add("submenuAktiv");
  }*/
 
-
+/*
 window.onload = montre;
 function montre(id) {
     var d = document.getElementById(id);
@@ -225,6 +225,6 @@ function montre(id) {
         d.style.display = 'block';
     }
 }
-
+*/
 
 
