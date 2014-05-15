@@ -14,8 +14,16 @@ var webtech = {
     kosten: "300€"
 };
 
+var ueberschrift ={
+    name: "Messe",
+    kosten: "Selbstkosten"
+};
+
 /* Funktion zum Auslesen der Messekosten */
 function auslesenKosten() {
+    document.getElementById("hmesse").innerHTML = ueberschrift.name;
+    document.getElementById("hkosten").innerHTML = ueberschrift.kosten;
+
     document.getElementById("cebit").innerHTML = cebit.messename;
     document.getElementById("kostencebit").innerHTML = cebit.kosten;
 
