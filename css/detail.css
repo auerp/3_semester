@@ -19,32 +19,19 @@ table{
 
 #inhalt {
     padding: 10px 0 10px 0px;
-    position: relative;
-    left: 15%;
     text-align:center;
+    margin-left:auto;
+    margin-right: auto;
+    float:left;
 }
 
-#tabelleCebitTeilnehmer {
+#tabelleTeilnehmer{
     text-align: center;
     padding: 10px 0 10px 0px;
-    position:relative;
-    left: 15%;
+    margin-left:auto;
+    margin-right: auto;
+    float:left;
 }
-
-#tabelleConhitTeilnehmer {
-    text-align: center;
-    padding: 10px 0 10px 0px;
-    position:relative;
-    left: 15%;
-}
-
-#tabelleWebtechTeilnehmer {
-    text-align: center;
-    padding: 10px 0 10px 0px;
-    position:relative;
-    left: 15%;
-}
-
 
 /*** KLASSEN ***/
 .tabellenInhalt{
@@ -54,7 +41,7 @@ table{
 }
 
 .tabelleTeilnehmer{
-    width: 200px;
+    width: 250px;
     border: 1px solid #000;
     font-size: 15px;
 }
