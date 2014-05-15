@@ -146,7 +146,7 @@ function auslesenCebitTeilnehmer(){
 
 function auslesenConhitTeilnehmer(){
     document.getElementById("conhitTeilnehmer1name").innerHTML = conhitTeilnehmer1.name;
-    document.getElementById("conhitTeilnemer1vorname").innerHTML = conhitTeilnehmer1.vorname;
+    document.getElementById("conhitTeilnehmer1vorname").innerHTML = conhitTeilnehmer1.vorname;
     document.getElementById("conhitTeilnehmer1studiengang").innerHTML = conhitTeilnehmer1.studiengang;
     document.getElementById("conhitTeilnehmer1email").innerHTML = conhitTeilnehmer1.email;
 }
