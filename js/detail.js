@@ -14,7 +14,7 @@ var webtech = {
     kosten: "300€"
 };
 
-var ueberschrift ={
+var ueberschrift = {
     name: "Messe",
     kosten: "Selbstkosten"
 };
@@ -33,7 +33,6 @@ function auslesenKosten() {
     document.getElementById("webtech").innerHTML = webtech.messename;
     document.getElementById("kostenwebtech").innerHTML = webtech.kosten;
 }
-
 
 
 /* JSON-Objekte für Tabelle "Teilnehmer" erstellen*/
@@ -65,7 +64,7 @@ var cebitTeilnehmer4 = {
     email: "m.gröschel@hs-mannheim.de"
 };
 
-var conhitTeilnehmer1={
+var conhitTeilnehmer1 = {
     name: "Ent",
     vorname: "Thilo",
     studiengang: "IB",
@@ -93,7 +92,7 @@ var conhitTeilnehmer4 = {
     email: "m.gröschel@hs-mannheim.de"
 };
 
-var webtechTeilnehmer1={
+var webtechTeilnehmer1 = {
     name: "Ent",
     vorname: "Thilo",
     studiengang: "IB",
@@ -122,7 +121,7 @@ var webtechTeilnehmer4 = {
 };
 
 /* Funktion zum auslesen der Teilnehmer */
-function auslesenCebitTeilnehmer(){
+function auslesenCebitTeilnehmer() {
     document.getElementById("cebitTeilnehmer1name").innerHTML = cebitTeilnehmer1.name;
     document.getElementById("cebitTeilnehmer1vorname").innerHTML = cebitTeilnehmer1.vorname;
     document.getElementById("cebitTeilnehmer1studiengang").innerHTML = cebitTeilnehmer1.studiengang;
@@ -144,7 +143,7 @@ function auslesenCebitTeilnehmer(){
     document.getElementById("cebitTeilnehmer4email").innerHTML = cebitTeilnehmer4.email;
 }
 
-function auslesenConhitTeilnehmer(){
+function auslesenConhitTeilnehmer() {
     document.getElementById("conhitTeilnehmer1name").innerHTML = conhitTeilnehmer1.name;
     document.getElementById("conhitTeilnehmer1vorname").innerHTML = conhitTeilnehmer1.vorname;
     document.getElementById("conhitTeilnehmer1studiengang").innerHTML = conhitTeilnehmer1.studiengang;
@@ -166,7 +165,7 @@ function auslesenConhitTeilnehmer(){
     document.getElementById("conhitTeilnehmer4email").innerHTML = conhitTeilnehmer4.email;
 }
 
-function auslesenWebtechTeilnehmer(){
+function auslesenWebtechTeilnehmer() {
     document.getElementById("webtechTeilnehmer1name").innerHTML = webtechTeilnehmer1.name;
     document.getElementById("webtechTeilnehmer1vorname").innerHTML = webtechTeilnehmer1.vorname;
     document.getElementById("webtechTeilnehmer1studiengang").innerHTML = webtechTeilnehmer1.studiengang;
@@ -188,15 +187,11 @@ function auslesenWebtechTeilnehmer(){
     document.getElementById("webtechTeilnehmer4email").innerHTML = webtechTeilnehmer4.email;
 }
 
-function ausblenden(){
-
-    for (var i = 0; i < arguments.length; i++){
-
+function ausblenden() {
+    for (var i = 0; i < arguments.length; i++) {
         var element = document.getElementById(arguments[i]);
-        element.style.display='none';
-
+        element.style.display = 'none';
     }
-    alert("HALLO DU");
 }
 
 /*
