@@ -34,6 +34,9 @@ function auslesenKosten() {
     document.getElementById("kostenwebtech").innerHTML = webtech.kosten;
 }
 
+element.classList.remove()
+
+element.classList.add()
 
 
 /* JSON-Objekte für Tabelle "Teilnehmer" erstellen*/
@@ -186,9 +189,16 @@ function auslesenWebtechTeilnehmer(){
     document.getElementById("webtechTeilnehmer4vorname").innerHTML = webtechTeilnehmer4.vorname;
     document.getElementById("webtechTeilnehmer4studiengang").innerHTML = webtechTeilnehmer4.studiengang;
     document.getElementById("webtechTeilnehmer4email").innerHTML = webtechTeilnehmer4.email;
+}
 
+function ausblenden(){
+    alert("HALLO DU DA");
+    for (var i = 0; i < arguments.length; i++){
 
+        var element = document.getElementById(arguments[i]);
+        element.style.visibility='none';
 
+    }
 }
 
 /*

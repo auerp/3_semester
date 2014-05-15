@@ -35,7 +35,7 @@
             <li onclick="auslesenKosten()"><a href="#">Kosten der Messe</a></li>
             <li onclick="auslesenTeilnehmer()"><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
-                    <li id="cebitDetail" onclick="auslesenCebitTeilnehmer()"><a href="#">Cebit</a></li>
+                    <li id="cebitDetail" onclick="auslesenCebitTeilnehmer(); ausblenden('inhalt')"><a href="#">Cebit</a></li>
                     <li id="conhitDetail" onclick="auslesenConhitTeilnehmer()"><a href="#">Conhit</a></li>
                     <li id="webtechDetail" onclick="auslesenWebtechTeilnehmer()"><a href="#">WebTech Con</a></li>
                 </ul>
@@ -66,7 +66,7 @@
         </table>
     </div>
 
-    <div id="tabelleCebitTeilnehmer">
+    <div id="tabelleCebitTeilnehmer" onclick="ausblenden('inhalt')">
         <table>
             <tr>
                 <td id="cebitTeilnehmer1name" class="tabelleTeilnehmer"></td>
@@ -97,10 +97,10 @@
 
     <div id="tabelleConhitTeilnehmer">
         <table>
-            <tr>
+            <tr >
                 <td id="conhitTeilnehmer1name" class="tabelleTeilnehmer"></td>
                 <td id="conhitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
-                <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
+                <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer" ></td>
                 <td id="conhitTeilnehmer1email" class="tabelleTeilnehmer"></td>
             </tr>
             <tr>
