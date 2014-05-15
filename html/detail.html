@@ -18,7 +18,7 @@
 
     <title>Detail</title>
 </head>
-<body>
+<body onload="auslesenKosten(); ausblenden('tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer')">
 
 <div id="container">
     <div id="header">
@@ -34,7 +34,7 @@
         <ul id="main_nav">
             <li onclick="auslesenKosten(); ausblenden('tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
                 <a href="#">Kosten der Messe</a></li>
-            <li onclick="auslesenTeilnehmer()"><a href="#">Teilnehmer</a>
+            <li onclick="ausblenden('tableKosten')"><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
                     <li id="cebitDetail"
                         onclick="auslesenCebitTeilnehmer(); ausblenden('tableKosten', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
