@@ -194,6 +194,13 @@ function ausblenden() {
     }
 }
 
+function einblenden() {
+    for (var i = 0; i < arguments.length; i++){
+        var element = document.getElementById(arguments[i]);
+        element.style.display='block';
+    }
+}
+
 /*
  function klickSubNav(obj) {
  var sub_nav = document.getElementByID('sub_nav');

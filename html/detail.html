@@ -32,12 +32,19 @@
 
     <div id="menue">
         <ul id="main_nav">
-            <li onclick="auslesenKosten()"><a href="#">Kosten der Messe</a></li>
+            <li onclick="auslesenKosten(); ausblenden('tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('inhalt')">
+                <a href="#">Kosten der Messe</a></li>
             <li onclick="auslesenTeilnehmer()"><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
-                    <li id="cebitDetail" onclick="auslesenCebitTeilnehmer(); ausblenden('inhalt', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer')"><a href="#">Cebit</a></li>
-                    <li id="conhitDetail" onclick="auslesenConhitTeilnehmer(); ausblenden('inhalt', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer')"><a href="#">Conhit</a></li>
-                    <li id="webtechDetail" onclick="auslesenWebtechTeilnehmer(); ausblenden('inhalt','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer')"><a href="#">WebTech Con</a></li>
+                    <li id="cebitDetail"
+                        onclick="auslesenCebitTeilnehmer(); ausblenden('inhalt', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
+                        <a href="#">Cebit</a></li>
+                    <li id="conhitDetail"
+                        onclick="auslesenConhitTeilnehmer(); ausblenden('inhalt', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleConhitTeilnehmer')">
+                        <a href="#">Conhit</a></li>
+                    <li id="webtechDetail"
+                        onclick="auslesenWebtechTeilnehmer(); ausblenden('inhalt','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer'); einblenden('tabelleWebtechTeilnehmer')">
+                        <a href="#">WebTech Con</a></li>
                 </ul>
             </li>
         </ul>
@@ -97,10 +104,10 @@
 
     <div id="tabelleConhitTeilnehmer">
         <table>
-            <tr >
+            <tr>
                 <td id="conhitTeilnehmer1name" class="tabelleTeilnehmer"></td>
                 <td id="conhitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
-                <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer" ></td>
+                <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
                 <td id="conhitTeilnehmer1email" class="tabelleTeilnehmer"></td>
             </tr>
             <tr>
@@ -109,10 +116,10 @@
                 <td id="conhitTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
                 <td id="conhitTeilnehmer2email" class="tabelleTeilnehmer"></td>
             </tr>
-                  <td id="conhitTeilnehmer3name" class="tabelleTeilnehmer"></td>
-                  <td id="conhitTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
-                  <td id="conhitTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
-                  <td id="conhitTeilnehmer3email" class="tabelleTeilnehmer"></td>
+            <td id="conhitTeilnehmer3name" class="tabelleTeilnehmer"></td>
+            <td id="conhitTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
+            <td id="conhitTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
+            <td id="conhitTeilnehmer3email" class="tabelleTeilnehmer"></td>
             <tr>
                 <td id="conhitTeilnehmer4name" class="tabelleTeilnehmer"></td>
                 <td id="conhitTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
