@@ -1,4 +1,4 @@
-/* Variablen Deklaration Tabelle T"Kosten der Messe" */
+/* JSON-Objekte für Tabelle "Kosten der Messe" erstellen */
 var cebit = {
     messename: "CeBIT",
     kosten: "50€"
@@ -14,28 +14,6 @@ var webtech = {
     kosten: "300€"
 };
 
-/* Variablen Deklaration Tabelle "Teilnehmer" */
-var cebitTeilnehmer = {
-    name: "Ent"
-    vorname: "Thilo"
-    studiengang: "IB"
-    email: "t.ent@gmail.de"
-};
-
-var conhitTeilnehmer={
-    name: "Ent"
-    vorname: "Thilo"
-    studiengang: "IB"
-    email: "t.ent@gmail.de"
-};
-
-var webtechTeilnehmer={
-    name: "Ent"
-    vorname: "Thilo"
-    studiengang: "IB"
-    email: "t.ent@gmail.de"
-};
-
 /* Funktion zum Auslesen der Messekosten */
 function auslesenKosten() {
     document.getElementById("cebit").innerHTML = cebit.messename;
@@ -47,6 +25,93 @@ function auslesenKosten() {
     document.getElementById("webtech").innerHTML = webtech.messename;
     document.getElementById("kostenwebtech").innerHTML = webtech.kosten;
 }
+
+
+
+/* JSON-Objekte für Tabelle "Teilnehmer" erstellen*/
+var cebitTeilnehmer1 = {
+    name: "Ent",
+    vorname: "Thilo",
+    studiengang: "IB",
+    email: "t.ent@gmail.de"
+};
+
+var cebitTeilnehmer2 = {
+    name: "Kraus",
+    vorname: "Martina",
+    studiengang: "IB",
+    email: "m.kraus@hs-mannheim.de"
+};
+
+var cebitTeilnehmer3 = {
+    name: "Smits",
+    vorname: "Thomas",
+    studiengang: "UIB",
+    email: "t.smits@hs-mannheim.de"
+};
+
+var cebitTeilnehmer4 = {
+    name: "Gröschel",
+    vorname: "Michael",
+    studiengang: "UIB",
+    email: "m.gröschel@hs-mannheim.de"
+};
+
+var conhitTeilnehmer1={
+    name: "Ent",
+    vorname: "Thilo",
+    studiengang: "IB",
+    email: "t.ent@gmail.de"
+};
+
+var conhitTeilnehmer2 = {
+    name: "Kraus",
+    vorname: "Martina",
+    studiengang: "IB",
+    email: "m.kraus@hs-mannheim.de"
+};
+
+var conhitTeilnehmer3 = {
+    name: "Smits",
+    vorname: "Thomas",
+    studiengang: "UIB",
+    email: "t.smits@hs-mannheim.de"
+};
+
+var conhitTeilnehmer4 = {
+    name: "Gröschel",
+    vorname: "Michael",
+    studiengang: "UIB",
+    email: "m.gröschel@hs-mannheim.de"
+};
+
+var webtechTeilnehmer1={
+    name: "Ent",
+    vorname: "Thilo",
+    studiengang: "IB",
+    email: "t.ent@gmail.de"
+};
+
+var webtechTeilnehmer2 = {
+    name: "Kraus",
+    vorname: "Martina",
+    studiengang: "IB",
+    email: "m.kraus@hs-mannheim.de"
+};
+
+var webtechTeilnehmer3 = {
+    name: "Smits",
+    vorname: "Thomas",
+    studiengang: "UIB",
+    email: "t.smits@hs-mannheim.de"
+};
+
+var webtechTeilnehmer4 = {
+    name: "Gröschel",
+    vorname: "Michael",
+    studiengang: "UIB",
+    email: "m.gröschel@hs-mannheim.de"
+};
 
 /* Funktion zum auslesen der Teilnehmer */
 function auslesenTeilnehmer(){
