@@ -18,7 +18,7 @@
 
     <title>Detail</title>
 </head>
-<body onload="auslesenKosten()">
+<body>
 
 <div id="container">
     <div id="header">
@@ -32,7 +32,7 @@
 
     <div id="menue">
         <ul id="main_nav">
-            <li><a href="#">Kosten der Messe</a></li>
+            <li onclick="auslesenKosten()"><a href="#">Kosten der Messe</a></li>
             <li onload="auslesenTeilnehmer()"><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
                     <li id="cebitDetail" onclick="klickSubNav('cebitDetail')"><a href="#">Cebit</a></li>
