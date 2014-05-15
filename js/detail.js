@@ -122,8 +122,33 @@ var webtechTeilnehmer4 = {
 };
 
 /* Funktion zum auslesen der Teilnehmer */
-function auslesenTeilnehmer(){
+function auslesenCebitTeilnehmer(){
+    document.getElementById("cebitTeilnehmer1name").innerHTML = cebitTeilnehmer1.name;
+    document.getElementById("cebitTeilnehmer1vorname").innerHTML = cebitTeilnehmer1.vorname;
+    document.getElementById("cebitTeilnehmer1studiengang").innerHTML = cebitTeilnehmer1.studiengang;
+    document.getElementById("cebitTeilnehmer1email").innerHTML = cebitTeilnehmer1.email;
 
+    document.getElementById("cebitTeilnehmer2name").innerHTML = cebitTeilnehmer2.name;
+    document.getElementById("cebitTeilnehmer2vorname").innerHTML = cebitTeilnehmer2.vorname;
+    document.getElementById("cebitTeilnehmer2studiengang").innerHTML = cebitTeilnehmer2.studiengang;
+    document.getElementById("cebitTeilnehmer2email").innerHTML = cebitTeilnehmer2.email;
+
+    document.getElementById("cebitTeilnehmer3name").innerHTML = cebitTeilnehmer3.name;
+    document.getElementById("cebitTeilnehmer3vorname").innerHTML = cebitTeilnehmer3.vorname;
+    document.getElementById("cebitTeilnehmer3studiengang").innerHTML = cebitTeilnehmer3.studiengang;
+    document.getElementById("cebitTeilnehmer3email").innerHTML = cebitTeilnehmer3.email;
+
+    document.getElementById("cebitTeilnehmer4name").innerHTML = cebitTeilnehmer4.name;
+    document.getElementById("cebitTeilnehmer4vorname").innerHTML = cebitTeilnehmer4.vorname;
+    document.getElementById("cebitTeilnehmer4studiengang").innerHTML = cebitTeilnehmer4.studiengang;
+    document.getElementById("cebitTeilnehmer4email").innerHTML = cebitTeilnehmer4.email;
+}
+
+function auslesenConhitTeilnehmer(){
+    document.getElementById("conhitTeilnehmer1name").innerHTML = conhitTeilnehmer1.name;
+    document.getElementById("conhitTeilnemer1vorname").innerHTML = conhitTeilnehmer1.vorname;
+    document.getElementById("conhitTeilnehmer1studiengang").innerHTML = conhitTeilnehmer1.studiengang;
+    document.getElementById("conhitTeilnehmer1email").innerHTML = conhitTeilnehmer1.email;
 }
 
 /*
