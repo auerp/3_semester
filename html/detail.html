@@ -18,7 +18,7 @@
 
     <title>Detail</title>
 </head>
-<body onload="auslesen()">
+<body onload="auslesenKosten()">
 
 
 <div id="container">
@@ -31,22 +31,20 @@
         </div>
     </div>
 
-    <div>
+    <div id="menue">
         <ul id="main_nav">
             <li><a href="#">Kosten der Messe</a></li>
             <li><a href="#">Teilnehmer</a>
                 <ul id="sub_nav">
-                    <li><a href="#">Cebit</a></li>
-                    <li><a href="#">Conhit</a></li>
-                    <li><a href="#">WebTech Con</a></li>
+                    <li id="cebitDetail" onclick="klickSubNav('cebitDetail')"><a href="#">Cebit</a></li>
+                    <li id="conhitDetail" onclick="klickSubNav('conhitDetail')"><a href="#">Conhit</a></li>
+                    <li id="webtechDetail" onclick="klickSubNav('webtechDetail')"><a href="#">WebTech Con</a></li>
                 </ul>
             </li>
         </ul>
-
-        <div class="clearfix">
-        </div>
     </div>
-
+    <div class="clearfix">
+    </div>
 
     <div id="inhalt">
         <table>

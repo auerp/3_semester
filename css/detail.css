@@ -3,7 +3,6 @@ table{
     border-collapse: collapse; /*durchgehende Linie*/
 }
 
-
 /*** UNIVERSAL-SELEKTOR ***/
 * {
     margin: 0;
@@ -19,9 +18,10 @@ table{
 }
 
 #inhalt {
-    padding: 10px 0 10px 30px;
+    padding: 10px 0 10px 0px;
+    position:relative;
+    left: 15%;
 }
-
 
 
 /*** KLASSEN ***/

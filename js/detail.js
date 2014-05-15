@@ -1,28 +1,82 @@
-
-
-var cebit= {
+/* Variablen Deklaration Tabelle T"Kosten der Messe" */
+var cebit = {
     messename: "CeBIT",
     kosten: "50€"
- };
+};
 
-var conhit ={
+var conhit = {
     messename: "ConHIT",
     kosten: "30€"
 };
 
-var webtech ={
+var webtech = {
     messename: "WebTeCH",
     kosten: "300€"
 };
 
+/* Variablen Deklaration Tabelle "Teilnehmer" */
+var cebitTeilnehmer = {
+    name: "Ent"
+    vorname: "Thilo"
+    studiengang: "IB"
+    email: "t.ent@gmail.de"
+};
 
-function auslesen(){
-    document.getElementById("cebit").innerHTML=cebit.messename;
-    document.getElementById("kostencebit").innerHTML=cebit.kosten;
+var conhitTeilnehmer={
+    name: "Ent"
+    vorname: "Thilo"
+    studiengang: "IB"
+    email: "t.ent@gmail.de"
+};
 
-    document.getElementById("conhit").innerHTML=conhit.messename;
-    document.getElementById("kostenconhit").innerHTML=conhit.kosten;
+var webtechTeilnehmer={
+    name: "Ent"
+    vorname: "Thilo"
+    studiengang: "IB"
+    email: "t.ent@gmail.de"
+};
 
-    document.getElementById("webtech").innerHTML=webtech.messename;
-    document.getElementById("kostenwebtech").innerHTML=webtech.kosten;
+/* Funktion zum Auslesen der Messekosten */
+function auslesenKosten() {
+    document.getElementById("cebit").innerHTML = cebit.messename;
+    document.getElementById("kostencebit").innerHTML = cebit.kosten;
+
+    document.getElementById("conhit").innerHTML = conhit.messename;
+    document.getElementById("kostenconhit").innerHTML = conhit.kosten;
+
+    document.getElementById("webtech").innerHTML = webtech.messename;
+    document.getElementById("kostenwebtech").innerHTML = webtech.kosten;
 }
+
+/* Funktion zum auslesen der Teilnehmer */
+function auslesenTeilnehmer(){
+
+}
+
+/*
+ function klickSubNav(obj) {
+ var sub_nav = document.getElementByID('sub_nav');
+ var kinder = sub_nav.children;
+ for (var i = 0; i < kinder.length; i++) {
+ kinder[i].classList.remove("submenuAktiv");
+ }
+ var submenuAktiv = document.getElementById(obj);
+ submenuAktiv.classList.add("submenuAktiv");
+ }*/
+
+
+window.onload = montre;
+function montre(id) {
+    var d = document.getElementById(id);
+    for (var i = 1; i <= 10; i++) {
+        if (document.getElementById('smenu' + i)) {
+            document.getElementById('smenu' + i).style.display = 'none';
+        }
+    }
+    if (d) {
+        d.style.display = 'block';
+    }
+}
+
+
+
