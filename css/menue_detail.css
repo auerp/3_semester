@@ -9,6 +9,9 @@
 #menue-horizontal {
     /*border:3px solid green;*/
     float: left; /*Div Bereich schließt ul-Element ein*/
+    margin: 0 auto;
+    left: 20%;
+    position: relative;
 }
 
 /* ul Elemente */
