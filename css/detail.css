@@ -29,16 +29,14 @@ table {
 #inhalt-links{
     float:left;
     width:25%;
-    border: 2px solid orange;
-}
 
+}
 
 #inhalt-rechts{
     text-align: center;
     float: left;
     width:70%;
     margin: 0 0 0 10px;
-    border:2px solid yellow;
 }
 /*
 #tableKosten {
