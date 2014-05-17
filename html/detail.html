@@ -20,6 +20,7 @@
 </head>
 <body onload="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer')">
 
+<!-- Container -->
 <div id="container">
     <div id="header">
         <div id="header-left">
@@ -30,7 +31,8 @@
         </div>
     </div>
 
-    <div id="menue">
+    <!-- Menü Horizontal -->
+    <div id="menue-horizontal">
         <ul>
             <li onclick="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
                 <a href="#">Kosten der Messe</a></li>
@@ -51,116 +53,126 @@
         </ul>
     </div>
 
+    <!-- Zwei Spaltiges Layout -->
+    <!-- Inhalt -->
+    <div id="inhalt">
 
-    <div id="tableKosten">
-        <table>
-            <tr>
-                <td id="hmesse" class="tabellenInhalt"></td>
-                <td id="hkosten" class="tabellenInhalt"></td>
-            </tr>
-            <tr>
-                <td id="cebit" class="tabellenInhalt"></td>
-                <td id="kostencebit" class="tabellenInhalt"></td>
-            </tr>
-            <tr>
-                <td id="conhit" class="tabellenInhalt"></td>
-                <td id="kostenconhit" class="tabellenInhalt"></td>
-            </tr>
-            <tr>
-                <td id="webtech" class="tabellenInhalt"></td>
-                <td id="kostenwebtech" class="tabellenInhalt"></td>
-            </tr>
-        </table>
+        <!-- Inhalt Links für Seitennavigation -->
+        <div id="inhalt-links">
+            Ich bin die vertikale Seitennavigation
+        </div>
+
+        <<!-- Inhalt rechts für Content -->
+        <div id="inhalt-rechts">
+            <div id="tableKosten">
+                <table>
+                    <tr>
+                        <td id="hmesse" class="tabellenInhalt"></td>
+                        <td id="hkosten" class="tabellenInhalt"></td>
+                    </tr>
+                    <tr>
+                        <td id="cebit" class="tabellenInhalt"></td>
+                        <td id="kostencebit" class="tabellenInhalt"></td>
+                    </tr>
+                    <tr>
+                        <td id="conhit" class="tabellenInhalt"></td>
+                        <td id="kostenconhit" class="tabellenInhalt"></td>
+                    </tr>
+                    <tr>
+                        <td id="webtech" class="tabellenInhalt"></td>
+                        <td id="kostenwebtech" class="tabellenInhalt"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="tableTeilnehmer">
+            <div id="tabelleCebitTeilnehmer" onclick="ausblenden('tableKosten')">
+                <table>
+                    <tr>
+                        <td id="cebitTeilnehmer1name" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer1email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="cebitTeilnehmer2name" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer2vorname" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer2email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="cebitTeilnehmer3name" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer3email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="cebitTeilnehmer4name" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer4studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmer4email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div id="tabelleConhitTeilnehmer">
+                <table>
+                    <tr>
+                        <td id="conhitTeilnehmer1name" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer1email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="conhitTeilnehmer2name" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer2vorname" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer2email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <td id="conhitTeilnehmer3name" class="tabelleTeilnehmer"></td>
+                    <td id="conhitTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
+                    <td id="conhitTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
+                    <td id="conhitTeilnehmer3email" class="tabelleTeilnehmer"></td>
+                    <tr>
+                        <td id="conhitTeilnehmer4name" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer4studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmer4email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="tabelleWebtechTeilnehmer">
+                <table>
+                    <tr>
+                        <td id="webtechTeilnehmer1name" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer1email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="webtechTeilnehmer2name" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer2vorname" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer2email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="webtechTeilnehmer3name" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer3email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
+                        <td id="webtechTeilnehmer4name" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer4studiengang" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmer4email" class="tabelleTeilnehmer"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-
-    <div id="tableTeilnehmer">
-        <div id="tabelleCebitTeilnehmer" onclick="ausblenden('tableKosten')">
-            <table>
-                <tr>
-                    <td id="cebitTeilnehmer1name" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer1email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="cebitTeilnehmer2name" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer2vorname" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer2email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="cebitTeilnehmer3name" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer3email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="cebitTeilnehmer4name" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer4studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="cebitTeilnehmer4email" class="tabelleTeilnehmer"></td>
-                </tr>
-            </table>
-        </div>
-
-
-        <div id="tabelleConhitTeilnehmer">
-            <table>
-                <tr>
-                    <td id="conhitTeilnehmer1name" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer1email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="conhitTeilnehmer2name" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer2vorname" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer2email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <td id="conhitTeilnehmer3name" class="tabelleTeilnehmer"></td>
-                <td id="conhitTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
-                <td id="conhitTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
-                <td id="conhitTeilnehmer3email" class="tabelleTeilnehmer"></td>
-                <tr>
-                    <td id="conhitTeilnehmer4name" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer4studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="conhitTeilnehmer4email" class="tabelleTeilnehmer"></td>
-                </tr>
-            </table>
-        </div>
-
-        <div id="tabelleWebtechTeilnehmer">
-            <table>
-                <tr>
-                    <td id="webtechTeilnehmer1name" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer1email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="webtechTeilnehmer2name" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer2vorname" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer2studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer2email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="webtechTeilnehmer3name" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer3vorname" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer3studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer3email" class="tabelleTeilnehmer"></td>
-                </tr>
-                <tr>
-                    <td id="webtechTeilnehmer4name" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer4vorname" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer4studiengang" class="tabelleTeilnehmer"></td>
-                    <td id="webtechTeilnehmer4email" class="tabelleTeilnehmer"></td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
 </div>
 </body>
 </html>

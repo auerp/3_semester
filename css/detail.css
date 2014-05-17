@@ -17,6 +17,30 @@ table {
     font-size: 20px;
 }
 
+#inhalt{
+    float:left;
+    border: 2px solid green;
+    width:100%;
+    margin: 3px 0 0;
+    padding: 20px 0 0;
+    text-align: center;
+}
+
+#inhalt-links{
+    float:left;
+    width:25%;
+    border: 2px solid orange;
+}
+
+
+#inhalt-rechts{
+    text-align: center;
+    float: left;
+    width:70%;
+    margin: 0 0 0 10px;
+    border:2px solid yellow;
+}
+/*
 #tableKosten {
     padding: 10px 0 10px 0px;
     text-align: center;
@@ -29,7 +53,7 @@ table {
     text-align: center;
     float: left;
     margin: 35px auto 0 auto;
-}
+}*/
 
 
 /*** KLASSEN ***/

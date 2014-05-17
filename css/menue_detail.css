@@ -1,63 +1,63 @@
 /* Alle Elemente */
-#menue *{
-    margin:0;
-    padding:0;
+#menue-horizontal * {
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
 /* Div Bereich */
-#menue{
+#menue-horizontal {
     /*border:3px solid green;*/
-    float:left; /*Div Bereich schließt ul-Element ein*/
+    float: left; /*Div Bereich schließt ul-Element ein*/
 }
 
 /* ul Elemente */
-#menue ul{
+#menue-horizontal ul {
     /*border: 2px solid red;*/
-    float:left; /*ul-Element schließt li-Elemente ein*/
-    clear:both;
+    float: left; /*ul-Element schließt li-Elemente ein*/
+    clear: both;
 }
 
 /* li Elmente */
-#menue li{
+#menue-horizontal li {
     /*border: 2px solid blue;*/
     list-style-type: none;
     float: left;
-    position:relative;
+    position: relative;
     background-color: #DED;
 }
 
-#menue li:first-child{
-    border-left:none;
+#menue-horizontal li:first-child {
+    border-left: none;
 }
 
-#menue li ul{ /*Submenue*/
+#menue-horizontal li ul {
+    /*Submenue-horizontal*/
     position: absolute;
     width: 100%;
 
 }
 
-#menue li ul li{
+#menue-horizontal li ul li {
     width: 100%;
 }
 
-#menue a{
+#menue-horizontal a {
     background: linear-gradient(to bottom, #ffffff 21%, steelblue 100%);
     color: darkslategrey;
-    padding: .3em 1.5em; /* größe der Menuefelder */
-    display:block;
+    padding: .3em 1.5em; /* größe der menue felder */
+    display: block;
     border-right: 1px solid steelblue;
     border-bottom: 1px solid steelblue;
     border-left: 1px solid steelblue;
     border-top: 1px solid steelblue;
 }
 
-
 /* Links(hover) */
-#menue a:hover{
+#menue-horizontal a:hover {
     color: #FFF;
     background: -moz-linear-gradient(top, #1D412C, #666);
     background: -webkit-linear-gradient(top, #1D412C, #666);
-    background: -ms-linear-gradient(top, #1D412C,#666);
+    background: -ms-linear-gradient(top, #1D412C, #666);
 
 }
