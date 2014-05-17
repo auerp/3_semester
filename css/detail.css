@@ -23,13 +23,11 @@ table {
     width:100%;
     margin: 10px 0 15px 0;
     padding: 20px 0 0;
-    text-align: center;
 }
 
 #inhalt-links{
     float:left;
     width:25%;
-
 }
 
 #inhalt-rechts{
@@ -44,14 +42,11 @@ table {
     text-align: center;
     float:left;
     margin: 35px auto 0 auto;
-}
+}*/
 
 #tableTeilnehmer {
-    padding: 10px 0 10px 0px;
-    text-align: center;
-    float: left;
-    margin: 35px auto 0 auto;
-}*/
+   text-align: center;
+}
 
 
 /*** KLASSEN ***/
