@@ -54,3 +54,12 @@
     background: -ms-linear-gradient(top, #1D412C, #666);
 
 }
+
+#menue-horizontal li ul {
+    /*Submenue-horizontal*/
+    position: relative;
+}
+
+#menue-horizontal li ul li {
+
+}
