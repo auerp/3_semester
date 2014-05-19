@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+
 }
 
 /* Div Bereich */
@@ -19,7 +20,10 @@
     /*border: 2px solid red;*/
     float: left; /*ul-Element schließt li-Elemente ein*/
     clear: both;
+
 }
+
+
 
 /* li Elmente */
 #menue-horizontal li {
@@ -28,22 +32,17 @@
     float: left;
     position: relative;
     background-color: #DED;
+
 }
 
 #menue-horizontal li:first-child {
     border-left: none;
-}
-
-#menue-horizontal li ul {
-    /*Submenue-horizontal*/
-    position: absolute;
-    width: 100%;
+    float: left;
 
 }
 
-#menue-horizontal li ul li {
-    width: 100%;
-}
+
+
 
 #menue-horizontal a {
     background: linear-gradient(to bottom, #ffffff 21%, steelblue 100%);

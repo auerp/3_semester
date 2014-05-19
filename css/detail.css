@@ -47,6 +47,10 @@ table {
    text-align: center;
 }
 
+#menue-horizontal li{
+    float: left;
+}
+
 
 /*** KLASSEN ***/
 .tabellenInhalt {
