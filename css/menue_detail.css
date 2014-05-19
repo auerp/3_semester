@@ -30,6 +30,15 @@
     background-color: #DED;
 }
 
+#menue-horizontal li ul {
+    /*Submenue-horizontal*/
+    position: relative;
+}
+
+#menue-horizontal li ul li {
+
+}
+
 #menue-horizontal li:first-child {
     border-left: none;
     float: left;
@@ -55,11 +64,3 @@
 
 }
 
-#menue-horizontal li ul {
-    /*Submenue-horizontal*/
-    position: relative;
-}
-
-#menue-horizontal li ul li {
-
-}
