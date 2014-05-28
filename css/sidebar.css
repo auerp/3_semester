@@ -1,0 +1,54 @@
+#sidebar {
+    background-image: url(../images/icons/sidebar.png);
+    background-repeat: no-repeat;
+    height: 130px;
+    width: 50px;
+    position: fixed;
+    left: 0;
+    margin-top: 200px;
+    list-style: none;
+    text-decoration: none;
+}
+
+#cebitSidebar img{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    padding-left:10px;
+    margin-top: 10px;
+    /*border: 1px solid black;*/
+}
+
+#conhitSidebar img{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    padding-left: 10px;
+    margin-top: 45px;
+    padding-top:5px;
+    /*border: 1px solid black;*/
+
+}
+
+#webtechSidebar img{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top:10px;
+    margin-top: 80px;
+
+    /*border: 1px solid black;*/
+}
+
+/*#sidebar a:link {
+    text-decoration: none;
+}
+
+#sidebar a:hover{
+    visibility: hidden;
+    display: block;
+}*/
+
+/* Aufgabe 2 mit JQuery*"
+/* Aufgabe 3: Entweder a oder b*/

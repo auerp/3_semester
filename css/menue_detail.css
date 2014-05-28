@@ -118,6 +118,29 @@
     text-decoration:none; /*keine Unterstreichung*/
 }
 
+/*Listenelemente Submenu */
+#vertical ul ul li {
+    width:170px; /* Breite */
+    background:#DCE1E8; /*Hintergrundfarbe*/
+    border:1px solid #D5D7DB; /*Rand*/
+    border-top:0; /*Rand oben*/
+}
+/* Links Submenu */
+#vertical ul ul li a {
+    color:#476EA8; /* Schriftfarbe */
+    font-size:15px; /* Schriftgrösse */
+}
+/* Links Submenu Hoverzustand */
+#vertical ul ul li a:hover {
+    color:#153363; /*Schriftfarbe */
+    letter-spacing: 1px; /*Buchstabenabstand*/
+    background: #F0F4FA; /*Hintergrundfarbe */
+}
+
+
+
+
+
 /* Links(hover) */
 #menue-vertikal a:hover {
     color: #FFF;
@@ -134,4 +157,32 @@
 
 
 
+
+
+/* TRIANGLES
+------------------------------*/
+/*Span-Elemente*/
+#menue-vertikal span {
+    border-color: transparent #aaa transparent transparent; /*Dreieckfarbe */
+    border-style:solid; /*Randstyle*/
+    border-width:7px; /*Dreiecksgrösse*/
+    width:0; /*Breite (muss 0 sein)*/
+    height:0; /* Höhe (muss 0 sein*/
+    display:inline-block; /* Anzeigeart */
+    float:right; /* rechtsbündig */
+    margin-right:7px; /* Rand rechts */
+    position:relative; /* Positionierung */
+    transition:all 0.5s; /* Transition */
+    -moz-transition:all 0.5s;
+    -o-transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+}
+
+/*Span im Hoverzustand */
+#menue-vertikal a:hover span {
+    border-color: transparent #fff transparent transparent ; /* Dreieckfarbe */
+    transform:rotate(180deg); /* Rotation 180° */
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+}
 
