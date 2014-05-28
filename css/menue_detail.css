@@ -1,3 +1,5 @@
+/**** MENUE HORIZONTAL ****/
+
 /* Alle Elemente */
 #menue-horizontal * {
     margin: 0;
@@ -36,7 +38,6 @@
 }
 
 #menue-horizontal li ul li {
-
 }
 
 #menue-horizontal li:first-child {
@@ -61,6 +62,76 @@
     background: -moz-linear-gradient(top, #1D412C, #666);
     background: -webkit-linear-gradient(top, #1D412C, #666);
     background: -ms-linear-gradient(top, #1D412C, #666);
-
 }
+
+
+/**** MENUE VERTIKAL ****/
+
+#menue-vertikal{
+    border: 1px solid #D8E3D7;
+    box-shadow: #D8E3D7 1px 1px 3px 1px;
+    height: auto;
+    width:auto;
+    position: relative;
+    margin: 0 0 15px 10px;
+}
+
+#menue-vertikal ul{
+    background: #153363;
+    border: 2px solid red;
+    list-style: none;
+    margin:0; /*kein Rand aussen*/
+    padding:0; /* kein Rand innen */
+}
+
+/*Listenpunkte */
+#vertical ul li {
+    position:relative;
+}
+
+#menue-vertikal li{
+    border: 2px solid blue;
+}
+
+#menue-vertikal li ul {
+    /*Submenue-horizontal*/
+    border: 2px solid #ffffff;
+}
+
+#menue-vertikal li ul li {
+    border: 2px solid #000000;
+}
+
+#menue-vertikal li:first-child {
+    border-left: none;
+}
+
+#menue-vertikal a {
+    /*background: linear-gradient(to bottom, #ffffff 21%, steelblue 100%);*/
+    color: #f9f9f9;
+    padding: .3em 1.5em; /* größe der menue felder */
+    display: block;
+    /*border-right: 1px solid steelblue;
+    border-bottom: 1px solid steelblue;
+    border-left: 1px solid steelblue;
+    border-top: 1px solid steelblue;*/
+    text-decoration:none; /*keine Unterstreichung*/
+}
+
+/* Links(hover) */
+#menue-vertikal a:hover {
+    color: #FFF;
+    background: -moz-linear-gradient(top, #1D412C, #666);
+    background: -webkit-linear-gradient(top, #1D412C, #666);
+    background: -ms-linear-gradient(top, #1D412C, #666);
+}
+
+
+/*Verhalten der Unterlisten bei Hover */
+#menue-vertikal ul li:hover ul {
+    display:block; /* Blockanzeige der Unterlisten */
+}
+
+
+
 
