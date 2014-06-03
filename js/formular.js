@@ -1,66 +1,70 @@
-/**
- * Created by pauer on 02.06.14.
- */
+$(document).ready(function () {
 
-/* Methode zur Überpüfung der Eingabe innerhalb der Textfelder */
-function checkEingabe() {
+        $('#formularIndex').submit(function (event) {
 
-    result = true;
+                var error = "Bitte überprüfen sie ihre Eingabe!";
+                var fehlerhafteTextfelder = new Array();
 
-    // Prüft Feld Name
-    if (document.Formular.Name.value == "") {
-        alert("Bitte Ihren Namen eingeben!");
-        document.Formular.Name.focus(); // setzt Cursor auf Textfeld
-        return false; // erzeugt Abbruch und verhindert die weiteren Abfrageb
+                //Prüft Feld Name
+                var nachName = $('#name').val();
+                var suche = nachName.match("[A-Za-z]+");
+                if (nachName != suche) {
+                    fehlerhafteTextfelder.push($('#name'));
+                    //alert("Bitte Ihren Namen eingeben!");
+                }
+
+                //Prüft Feld Vorname
+                var vorName = $('#vorname').val();
+                var suche = vorName.match("[A-Za-z]+");
+                if (vorName != suche) {
+                    fehlerhafteTextfelder.push($('#vorname'));
+                    //alert("Bitte Ihren Vornamen eingeben!");
+                }
+
+                //Prüft Feld Matrikelnummer
+                var matrikelNr = $('#matrikelnr').val();
+                var suche = matrikelNr.match("[0-9]+");
+                if (matrikelNr != suche) {
+                    fehlerhafteTextfelder.push($('#matrikelnr'));
+                    //alert("Bitte gültige Matrikelnummer eingeben!");
+                }
+
+                //Prüft Feld Email
+                var emailAdresse = $('#email').val();
+                var suche = emailAdresse.match("[a-zA-Z0-9-+_.]+@[a-zA-Z0-9-+_.]+\.[a-z]{2,4}");
+                if (emailAdresse != suche) {
+                    fehlerhafteTextfelder.push($('#email'));
+                    //alert("Bitte Email Adresse eingeben!");
+                }
+
+                //Prüft Feld auf Handynummer
+                var handyNummer = $('#handy').val();
+                var suche = handyNummer.match("0[0-9]+");
+                if (handyNummer != suche) {
+                    fehlerhafteTextfelder.push($('#handy'));
+                    //alert("Bitte Handynummer eingeben!");
+                }
+
+                // entfernt Markierung
+                $.each($("input"), function () {
+                    $(this).removeClass('fehler');
+                });
+
+                //Markiert Feld mit ungültiger Eingabe
+                if (fehlerhafteTextfelder.length != 0) {
+                    for (i in fehlerhafteTextfelder) {
+                        fehlerhafteTextfelder[i].addClass('fehler');
+                    }
+
+                    alert(error) // Ruft Fehlermeldung auf
+
+                    // verhindert  absenden der Daten
+                    event.preventDefault();
+
+                    // fokusiert erstes Feld mit Fehler
+                    fehlerhafteTextfelder[0].focus();
+                }
+            }
+        )
     }
-
-    //Prüft Feld Vorname
-    if (document.Formular.Vorname == "") {
-        alert("Bitte Ihren Vornamen eingeben!");
-        document.Formular.Vorname.focus();
-        return false;
-    }
-
-    //Prüft Feld Matrikelnummer
-    if (document.Formular.Matrikelnr == "") {
-        alert("Bitte gültige Matrikelnummer eingeben!");
-        document.Formular.Matrikelnr.focus();
-        return false;
-    }
-
-    //Prüft Feld Email
-    if (document.Formular.Email == "") {
-        alert("Bitte Email Adresse eingeben!");
-        document.Formular.Email.focus();
-        return false;
-    }
-
-    //Prüft Feld Email auf @ und .
-    if (document.Formular.Email.value.indexOf("@") == -1 || //"-1" nicht Inhalt der Zeichenkette
-        document.Formular.Email.value.indexOf(".") == -1) {
-        alert("Keine gültige Email Adresse");
-        document.Formular.Email.focus();
-        return false;
-    }
-
-    //Prüft Feld auf Handynummer
-    if (document.Formular.Handy == "") {
-        alert("Bitte Handynummer eingeben!");
-        document.Formular.Handy.focus();
-        return false;
-    }
-
-    // Prüft Feld Handynummer auf korrekte Eingabe, nur Zahlen erlaubt
-    var checkHandy = 1;
-    for (i = 0; i < document.Formular.Handy.value.length; ++i)
-        if (document.Formular.Handy.value.charAt(i) < "0" ||    // Prüft Zeichen welche bei der Eingabe erlaubt sind
-            document.Formular.Handy.value.charAt(i) > "9")
-            chkZ = -1;
-
-    if (chkZ == -1) {
-        alert("Eingabe ist keine Zahl!");
-        document.Formular.Handy.focus();
-        return false;
-    }
-}
-
+);
