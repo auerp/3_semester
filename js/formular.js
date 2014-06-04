@@ -58,10 +58,10 @@ $(document).ready(function () {
 
                     alert(error) // Ruft Fehlermeldung auf
 
-                    // verhindert  absenden der Daten
+                    // Verhindert  das Absenden der Daten
                     event.preventDefault();
 
-                    // fokusiert erstes Feld mit Fehler
+                    // Fokusiert erstes Feld mit Fehler
                     fehlerhafteTextfelder[0].focus();
                 }
             }
