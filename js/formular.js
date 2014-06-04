@@ -2,7 +2,7 @@ $(document).ready(function () {
 
         $('#formularIndex').submit(function (event) {
 
-                var error = "Bitte überprüfen sie ihre Eingabe!";
+                var error = "Einige Eingaben sind fehlerhaft. Bitte überprüfen sie ihre Eingaben!";
                 var fehlerhafteTextfelder = new Array();
 
                 //Prüft Feld Name
