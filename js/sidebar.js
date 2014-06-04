@@ -2,10 +2,10 @@
  * Created by pauer on 28.05.14.
  */
 $(document).ready(function(){
-    $(".btn1").click(function(){
+    $(".sidebar").click(function(){
         $("p").fadeOut()
     });
-    $(".sideb").click(function(){
+    $(".sidebar").click(function(){
         $("p").fadeIn();
     });
 });

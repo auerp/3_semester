@@ -141,6 +141,7 @@
 
 
 
+
 /* Links(hover) */
 #menue-vertikal a:hover {
     color: #FFF;
@@ -148,7 +149,6 @@
     background: -webkit-linear-gradient(top, #1D412C, #666);
     background: -ms-linear-gradient(top, #1D412C, #666);
 }
-
 
 /*Verhalten der Unterlisten bei Hover */
 #menue-vertikal ul li:hover ul {
