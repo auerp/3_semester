@@ -1,9 +1,8 @@
 $(document).ready(function () {
-
         $('#formularIndex').submit(function (event) {
 
-                var error = "Einige Eingaben sind fehlerhaft. Bitte überprüfen sie ihre Eingaben!";
-                var fehlerhafteTextfelder = new Array();
+                var error = "Einige Eingaben sind fehlerhaft. Bitte überprüfen sie ihre Eingaben!"; //Variable in der Fehlermeldung gespeichert ist
+                var fehlerhafteTextfelder = new Array(); //Erzeugung des Textfeldes als Array
 
                 //Prüft Feld Name
                 var nachName = $('#name').val();
