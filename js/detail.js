@@ -201,30 +201,4 @@ function einblenden() {
     }
 }
 
-/*
- function klickSubNav(obj) {
- var sub_nav = document.getElementByID('sub_nav');
- var kinder = sub_nav.children;
- for (var i = 0; i < kinder.length; i++) {
- kinder[i].classList.remove("submenuAktiv");
- }
- var submenuAktiv = document.getElementById(obj);
- submenuAktiv.classList.add("submenuAktiv");
- }*/
-
-/*
-window.onload = montre;
-function montre(id) {
-    var d = document.getElementById(id);
-    for (var i = 1; i <= 10; i++) {
-        if (document.getElementById('smenu' + i)) {
-            document.getElementById('smenu' + i).style.display = 'none';
-        }
-    }
-    if (d) {
-        d.style.display = 'block';
-    }
-}
-*/
-
 

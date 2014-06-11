@@ -16,6 +16,8 @@
     <script src="../js/textfelder.js" type="text/javascript"></script>
     <script src="../js/detail.js" type="text/javascript"></script>
     <script src="../js/sidebar.js" type="text/javascript"></script>
+    <script src="../js/menue.js" type="text/javascript"></script>
+
 
 
     <title>Detail</title>
@@ -45,18 +47,22 @@
     <!-- Menü Horizontal -->
     <div id="menue-horizontal">
         <ul>
-            <li onclick="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
-                <a href="#">Kosten der Messe</a></li>
-            <li onclick="ausblenden('tableKosten'); einblenden('cebitDetail', 'conhitDetail','webtechDetail')"><a
-                    href="#">Teilnehmer</a>
+            <li id="aktuell" class="menueTabEins" onclick="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
+                <a  href="#">Kosten der Messe</a></li>
+            <li class="menueTabEins" onclick="ausblenden('tableKosten'); einblenden('cebitDetail', 'conhitDetail','webtechDetail')">
+                <a  href="#">Teilnehmer</a>
+</li>
+</ul>
+</div>
+    <div id="submenue-horizontal">
                 <ul>
-                    <li id="cebitDetail"
+                    <li class="submenuTab" id="cebitDetail"
                         onclick="auslesenCebitTeilnehmer(); ausblenden('tableKosten', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
                         <a href="#">Cebit</a></li>
-                    <li id="conhitDetail"
+                    <li class="submenuTab" id="conhitDetail"
                         onclick="auslesenConhitTeilnehmer(); ausblenden('tableKosten', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleConhitTeilnehmer')">
                         <a href="#">Conhit</a></li>
-                    <li id="webtechDetail"
+                    <li class="submenuTab" id="webtechDetail"
                         onclick="auslesenWebtechTeilnehmer(); ausblenden('tableKosten','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer'); einblenden('tabelleWebtechTeilnehmer')">
                         <a href="#">WebTech Con</a></li>
                 </ul>
@@ -72,9 +78,9 @@
         <!-- Inhalt Links für Seitennavigation -->
         <div id="inhalt-links">
 
-            <!-- Vertikale Seitennavigation -->
+            <!-- Vertikale Seitennavigation
             <div id="menue-vertikal">
-                <ul>
+                <!--<ul>
                     <li><a href="../index.html"><span></span>Home</a></li>
                     <li><a href="#"><span></span>Infoseiten</a>
                         <ul>
@@ -84,7 +90,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </div>-->
         </div>
 
         <!-- Inhalt rechts für Content -->

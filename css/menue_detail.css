@@ -9,7 +9,6 @@
 
 /* Div Bereich */
 #menue-horizontal {
-    /*border:3px solid green;*/
     float: left; /*Div Bereich schließt ul-Element ein*/
     margin: 0 auto;
     left: 20%;
@@ -18,18 +17,16 @@
 
 /* ul Elemente */
 #menue-horizontal ul {
-    /*border: 2px solid red;*/
     float: left; /*ul-Element schließt li-Elemente ein*/
     clear: both;
 }
 
 /* li Elmente */
 #menue-horizontal li {
-    /*border: 2px solid blue;*/
     list-style-type: none;
     float: left;
     position: relative;
-    background-color: #DED;
+    /*background-color: #DED;*/
 }
 
 #menue-horizontal li ul {
@@ -37,152 +34,113 @@
     position: relative;
 }
 
+
+
 #menue-horizontal li ul li {
 }
 
-#menue-horizontal li:first-child {
+
+
+/*#menue-horizontal li:first-child {
+    border-left: none;
+    float: left;
+}*/
+
+#menue-horizontal a {
+/*    background-color: #99D9EA;*/
+    /*color: black;*/
+    padding: .3em 1.5em; /* größe der menue felder */
+    display: block;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+#aktuell a{
+    color: white;
+    background-color: blue;
+}
+
+/* Links(hover)*/
+#menue-horizontal a:hover{
+    background-color: red;
+    color:black;
+}
+
+
+/*** SUBMENUE ***/
+#submenue-horizontal * {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#submenue-horizontal {
+    /*border:3px solid green;*/
+    float: left; /*Div Bereich schließt ul-Element ein*/
+    margin: 0 auto;
+    left: 20%;
+}
+
+#submenue-horizontal ul {
+    /*border: 2px solid red;*/
+    float: left; /*ul-Element schließt li-Elemente ein*/
+    clear: both;
+}
+
+#submenue-horizontal li {
+    border: 2px solid blue;
+    list-style-type: none;
+    display: block;
+    position: relative;
+    /*background-color: #DED;*/
+}
+
+#submenue-horizontal li ul {
+    /*Submenue-horizontal*/
+    position: relative;
+}
+
+#submenue-horizontall:first-child {
     border-left: none;
     float: left;
 }
 
-#menue-horizontal a {
-    background: linear-gradient(to bottom, #ffffff 21%, steelblue 100%);
-    color: darkslategrey;
+#submenue-horizontal a {
+    background-color: #99D9EA;
     padding: .3em 1.5em; /* größe der menue felder */
     display: block;
-    border-right: 1px solid steelblue;
-    border-bottom: 1px solid steelblue;
-    border-left: 1px solid steelblue;
-    border-top: 1px solid steelblue;
-}
-
-/* Links(hover) */
-#menue-horizontal a:hover {
-    color: #FFF;
-    background: -moz-linear-gradient(top, #1D412C, #666);
-    background: -webkit-linear-gradient(top, #1D412C, #666);
-    background: -ms-linear-gradient(top, #1D412C, #666);
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    color:black;
 }
 
 
-/**** MENUE VERTIKAL ****/
-
-#menue-vertikal{
-    border: 1px solid #D8E3D7;
-    box-shadow: #D8E3D7 1px 1px 3px 1px;
-    height: auto;
-    width:auto;
-    position: relative;
-    margin: 0 0 15px 10px;
+/* Links(hover)*/
+#submenue-horizontal a:hover{
+    background: red;
+    color: black;
 }
 
-#menue-vertikal ul{
-    background: #153363;
-    border: 2px solid red;
-    list-style: none;
-    margin:0; /*kein Rand aussen*/
-    padding:0; /* kein Rand innen */
+/*** KLASSEN
+.menueTab a{
+    color:black;
 }
 
-/*Listenpunkte */
-#vertical ul li {
-    position:relative;
+.menueTab a:hover{
+    background-color:blue;
+    color: white;
 }
 
-#menue-vertikal li{
-    border: 2px solid blue;
+.menueTab a:visited {
+    color:white;
+    background-color: blue;
 }
 
-#menue-vertikal li ul {
-    /*Submenue-horizontal*/
-    border: 2px solid #ffffff;
-}
-
-#menue-vertikal li ul li {
-    border: 2px solid #000000;
-}
-
-#menue-vertikal li:first-child {
-    border-left: none;
-}
-
-#menue-vertikal a {
-    /*background: linear-gradient(to bottom, #ffffff 21%, steelblue 100%);*/
-    color: #f9f9f9;
-    padding: .3em 1.5em; /* größe der menue felder */
-    display: block;
-    /*border-right: 1px solid steelblue;
-    border-bottom: 1px solid steelblue;
-    border-left: 1px solid steelblue;
-    border-top: 1px solid steelblue;*/
-    text-decoration:none; /*keine Unterstreichung*/
-}
-
-/*Listenelemente Submenu */
-#vertical ul ul li {
-    width:170px; /* Breite */
-    background:#DCE1E8; /*Hintergrundfarbe*/
-    border:1px solid #D5D7DB; /*Rand*/
-    border-top:0; /*Rand oben*/
-}
-/* Links Submenu */
-#vertical ul ul li a {
-    color:#476EA8; /* Schriftfarbe */
-    font-size:15px; /* Schriftgrösse */
-}
-/* Links Submenu Hoverzustand */
-#vertical ul ul li a:hover {
-    color:#153363; /*Schriftfarbe */
-    letter-spacing: 1px; /*Buchstabenabstand*/
-    background: #F0F4FA; /*Hintergrundfarbe */
-}
-
-
-
-
-
-
-/* Links(hover) */
-#menue-vertikal a:hover {
-    color: #FFF;
-    background: -moz-linear-gradient(top, #1D412C, #666);
-    background: -webkit-linear-gradient(top, #1D412C, #666);
-    background: -ms-linear-gradient(top, #1D412C, #666);
-}
-
-/*Verhalten der Unterlisten bei Hover */
-#menue-vertikal ul li:hover ul {
-    display:block; /* Blockanzeige der Unterlisten */
-}
-
-
-
-
-
-/* TRIANGLES
-------------------------------*/
-/*Span-Elemente*/
-#menue-vertikal span {
-    border-color: transparent #aaa transparent transparent; /*Dreieckfarbe */
-    border-style:solid; /*Randstyle*/
-    border-width:7px; /*Dreiecksgrösse*/
-    width:0; /*Breite (muss 0 sein)*/
-    height:0; /* Höhe (muss 0 sein*/
-    display:inline-block; /* Anzeigeart */
-    float:right; /* rechtsbündig */
-    margin-right:7px; /* Rand rechts */
-    position:relative; /* Positionierung */
-    transition:all 0.5s; /* Transition */
-    -moz-transition:all 0.5s;
-    -o-transition:all 0.5s;
-    -webkit-transition:all 0.5s;
-}
-
-/*Span im Hoverzustand */
-#menue-vertikal a:hover span {
-    border-color: transparent #fff transparent transparent ; /* Dreieckfarbe */
-    transform:rotate(180deg); /* Rotation 180° */
-    -moz-transform:rotate(180deg);
-    -webkit-transform:rotate(180deg);
-}
-
+.submenuTab a:hover{
+    background-color: #2E64FE;
+    color:black;
+}*/
