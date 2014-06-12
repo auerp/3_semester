@@ -1,146 +1,52 @@
 /**** MENUE HORIZONTAL ****/
-
-/* Alle Elemente */
-#menue-horizontal * {
-    margin: 0;
-    padding: 0;
+#menue * {
     text-align: center;
 }
 
-/* Div Bereich */
-#menue-horizontal {
-    float: left; /*Div Bereich schließt ul-Element ein*/
-    margin: 0 auto;
-    left: 20%;
-    position: relative;
-}
-
-/* ul Elemente */
-#menue-horizontal ul {
-    float: left; /*ul-Element schließt li-Elemente ein*/
-    clear: both;
-}
-
-/* li Elmente */
-#menue-horizontal li {
-    list-style-type: none;
+#menue {
     float: left;
-    position: relative;
-    /*background-color: #DED;*/
+    margin: 5px 0 0 5px;
+    width:100%;
+    line-height:25px;
 }
 
-#menue-horizontal li ul {
-    /*Submenue-horizontal*/
-    position: relative;
+.clear{
+    clear:both;
 }
 
-
-
-#menue-horizontal li ul li {
-}
-
-
-
-/*#menue-horizontal li:first-child {
-    border-left: none;
-    float: left;
-}*/
-
-#menue-horizontal a {
-/*    background-color: #99D9EA;*/
-    /*color: black;*/
-    padding: .3em 1.5em; /* größe der menue felder */
-    display: block;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-}
-
-#aktuell a{
-    color: white;
-    background-color: blue;
-}
-
-/* Links(hover)*/
-#menue-horizontal a:hover{
-    background-color: red;
-    color:black;
-}
-
-
-/*** SUBMENUE ***/
-#submenue-horizontal * {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-#submenue-horizontal {
-    /*border:3px solid green;*/
-    float: left; /*Div Bereich schließt ul-Element ein*/
-    margin: 0 auto;
-    left: 20%;
-}
-
-#submenue-horizontal ul {
-    /*border: 2px solid red;*/
-    float: left; /*ul-Element schließt li-Elemente ein*/
-    clear: both;
-}
-
-#submenue-horizontal li {
-    border: 2px solid blue;
-    list-style-type: none;
-    display: block;
-    position: relative;
-    /*background-color: #DED;*/
-}
-
-#submenue-horizontal li ul {
-    /*Submenue-horizontal*/
-    position: relative;
-}
-
-#submenue-horizontall:first-child {
-    border-left: none;
-    float: left;
-}
-
-#submenue-horizontal a {
+.aktivTab{
+    float:left;
+    border: 1px solid black;
+    width:33%;
     background-color: #99D9EA;
-    padding: .3em 1.5em; /* größe der menue felder */
-    display: block;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-top: 1px solid black;
-    color:black;
 }
 
+.submenuTab{
+    float:left;
+    border-right: 1px solid black;
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+    width:21.95%;
+    background-color: #99D9EA;
+}
 
 /* Links(hover)*/
-#submenue-horizontal a:hover{
-    background: red;
-    color: black;
-}
-
-/*** KLASSEN
-.menueTab a{
-    color:black;
-}
-
-.menueTab a:hover{
-    background-color:blue;
-    color: white;
-}
-
-.menueTab a:visited {
-    color:white;
-    background-color: blue;
+.aktivTab :hover{
+    background-color: red;
 }
 
 .submenuTab a:hover{
-    background-color: #2E64FE;
+    background-color: red;
+}
+
+
+/*** JS-Klassen ***/
+.aktiv{
+    color: white;
+    background-color: blue;
+}
+
+.aktivSub{
     color:black;
-}*/
+    background-color: #01A2E8;
+}

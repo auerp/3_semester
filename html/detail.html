@@ -19,17 +19,20 @@
     <script src="../js/menue.js" type="text/javascript"></script>
 
 
-
     <title>Detail</title>
 </head>
-<body onload="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer')">
+<body onload="klick('kostenTab');
+                auslesenKosten();
+                ausblenden('subCebit', 'subConhit', 'subWeb', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer')">
 
 
 <!-- Sidebar -->
 <div id="sidebar">
     <div id="cebitSidebar"><a href="cebit.html"><img src="../images/icons/cebit.png" alt="Cebit Infoseite"></a></div>
-    <div id="conhitSidebar"><a href="conhit.html"><img src="../images/icons/conhit.png" alt="ConHIT Infoseite"></a></div>
-    <div id="webtechSidebar"><a href="webtechcon.html"><img src="../images/icons/webtechcon.png" alt="WebTech Infoseite"></a></div>
+    <div id="conhitSidebar"><a href="conhit.html"><img src="../images/icons/conhit.png" alt="ConHIT Infoseite"></a>
+    </div>
+    <div id="webtechSidebar"><a href="webtechcon.html"><img src="../images/icons/webtechcon.png"
+                                                            alt="WebTech Infoseite"></a></div>
 </div>
 
 
@@ -45,29 +48,26 @@
     </div>
 
     <!-- Menü Horizontal -->
-    <div id="menue-horizontal">
-        <ul>
-            <li id="aktuell" class="menueTabEins" onclick="auslesenKosten(); ausblenden('cebitDetail', 'conhitDetail','webtechDetail', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
-                <a  href="#">Kosten der Messe</a></li>
-            <li class="menueTabEins" onclick="ausblenden('tableKosten'); einblenden('cebitDetail', 'conhitDetail','webtechDetail')">
-                <a  href="#">Teilnehmer</a>
-</li>
-</ul>
-</div>
-    <div id="submenue-horizontal">
-                <ul>
-                    <li class="submenuTab" id="cebitDetail"
-                        onclick="auslesenCebitTeilnehmer(); ausblenden('tableKosten', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
-                        <a href="#">Cebit</a></li>
-                    <li class="submenuTab" id="conhitDetail"
-                        onclick="auslesenConhitTeilnehmer(); ausblenden('tableKosten', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleConhitTeilnehmer')">
-                        <a href="#">Conhit</a></li>
-                    <li class="submenuTab" id="webtechDetail"
-                        onclick="auslesenWebtechTeilnehmer(); ausblenden('tableKosten','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer'); einblenden('tabelleWebtechTeilnehmer')">
-                        <a href="#">WebTech Con</a></li>
-                </ul>
-            </li>
-        </ul>
+    <div id="menue">
+        <div id="kostenTab" class="aktivTab"
+             onclick="klick('kostenTab'); auslesenKosten(); ausblenden('subCebit', 'subConhit', 'subWeb', 'tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tableKosten')">
+            <a href="#">Kosten der Messe</a></div>
+        <div id="teilnehmerTab" class="aktivTab"
+             onclick="klick('teilnehmerTab'); ausblenden('tableKosten'); einblenden('subCebit', 'subConhit', 'subWeb')">
+            <a href="#">Teilnehmer</a>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="subCebit" class="submenuTab"
+             onclick="klick('subCebit'); auslesenCebitTeilnehmer(); ausblenden('tableKosten', 'tabelleConhitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleCebitTeilnehmer')">
+            <a href="#">Cebit</a></div>
+        <div id="subConhit" class="submenuTab"
+             onclick="klick('subConhit'); auslesenConhitTeilnehmer(); ausblenden('tableKosten', 'tabelleCebitTeilnehmer', 'tabelleWebtechTeilnehmer'); einblenden('tabelleConhitTeilnehmer')">
+            <a href="#">Conhit</a></div>
+        <div id="subWeb" class="submenuTab"
+             onclick="klick('subWeb'); auslesenWebtechTeilnehmer(); ausblenden('tableKosten','tabelleCebitTeilnehmer', 'tabelleConhitTeilnehmer'); einblenden('tabelleWebtechTeilnehmer')">
+            <a href="#">WebTech Con</a></div>
     </div>
 
 
@@ -120,6 +120,12 @@
             <div id="tabelleCebitTeilnehmer">
                 <table>
                     <tr>
+                        <td id="cebitTeilnehmerUeberschriftName" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmerUeberschriftVorname" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmerUeberschriftStudiengang" class="tabelleTeilnehmer"></td>
+                        <td id="cebitTeilnehmerUeberschriftEmail" class="tabelleTeilnehmer"></td>
+                    </tr>
+                    <tr>
                         <td id="cebitTeilnehmer1name" class="tabelleTeilnehmer"></td>
                         <td id="cebitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
                         <td id="cebitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
@@ -150,6 +156,13 @@
             <div id="tabelleConhitTeilnehmer">
                 <table>
                     <tr>
+                        <td id="conhitTeilnehmerUeberschriftName" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmerUeberschriftVorname" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmerUeberschriftStudiengang" class="tabelleTeilnehmer"></td>
+                        <td id="conhitTeilnehmerUeberschriftEmail" class="tabelleTeilnehmer"></td>
+                    </tr>
+
+                    <tr>
                         <td id="conhitTeilnehmer1name" class="tabelleTeilnehmer"></td>
                         <td id="conhitTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
                         <td id="conhitTeilnehmer1studiengang" class="tabelleTeilnehmer"></td>
@@ -178,6 +191,12 @@
 
             <div id="tabelleWebtechTeilnehmer">
                 <table>
+                    <tr>
+                        <td id="webtechTeilnehmerUeberschriftName" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmerUeberschriftVorname" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmerUeberschriftStudiengang" class="tabelleTeilnehmer"></td>
+                        <td id="webtechTeilnehmerUeberschriftEmail" class="tabelleTeilnehmer"></td>
+                    </tr>
                     <tr>
                         <td id="webtechTeilnehmer1name" class="tabelleTeilnehmer"></td>
                         <td id="webtechTeilnehmer1vorname" class="tabelleTeilnehmer"></td>
