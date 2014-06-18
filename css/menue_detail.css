@@ -21,6 +21,10 @@
     background-color: #99D9EA;
 }
 
+.aktivTab a{
+    color: black;
+}
+
 .submenuTab{
     float:left;
     border-right: 1px solid black;
@@ -31,19 +35,22 @@
 }
 
 /* Links(hover)*/
-.aktivTab :hover{
-    background-color: red;
+.aktivTab a:hover{
+    color: white;
 }
 
 .submenuTab a:hover{
-    background-color: red;
+    color: white;
 }
 
 
 /*** JS-Klassen ***/
 .aktiv{
-    color: white;
     background-color: blue;
+}
+
+.aktiv a{
+    color: white;
 }
 
 .aktivSub{
