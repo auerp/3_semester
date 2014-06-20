@@ -32,3 +32,4 @@ if($_GET["messe"] == "webtech"){
     fwrite($handle, $data);
     fclose($handle);
 }
+$>
