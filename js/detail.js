@@ -1,5 +1,5 @@
 /* JSON-Objekte für Tabelle "Kosten der Messe" erstellen */
-var cebit = {
+/*var cebit = {
     messename: "CeBIT",
     kosten: "50€"
 };
@@ -13,7 +13,7 @@ var webtech = {
     messename: "WebTeCH",
     kosten: "300€"
 };
-
+*/
 var ueberschrift = {
     name: "Messe",
     kosten: "Selbstkosten"
@@ -42,7 +42,7 @@ var cebitTeilnehmerUeberschrift = {
     studiengang: "Studiengang",
     email: "eMail"
 };
-
+/*
 var cebitTeilnehmer1 = {
     name: "Ent",
     vorname: "Thilo",
@@ -69,7 +69,7 @@ var cebitTeilnehmer4 = {
     vorname: "Michael",
     studiengang: "UIB",
     email: "m.gröschel@hs-mannheim.de"
-};
+};*/
 
 var conhitTeilnehmerUeberschrift = {
     name: "Name",
@@ -77,7 +77,7 @@ var conhitTeilnehmerUeberschrift = {
     studiengang: "Studiengang",
     email: "eMail"
 };
-
+/*
 var conhitTeilnehmer1 = {
     name: "Schramm",
     vorname: "Wolfgang",
@@ -105,14 +105,14 @@ var conhitTeilnehmer4 = {
     studiengang: "UIB",
     email: "m.gröschel@hs-mannheim.de"
 };
-
+*/
 var webtechTeilnehmerUeberschrift = {
     name: "Name",
     vorname: "Vorname",
     studiengang: "Studiengang",
     email: "eMail"
 };
-
+/*
 var webtechTeilnehmer1 = {
     name: "Ent",
     vorname: "Thilo",
@@ -140,7 +140,7 @@ var webtechTeilnehmer4 = {
     studiengang: "UIB",
     email: "m.gröschel@hs-mannheim.de"
 };
-
+*/
 /* Funktion zum auslesen der Teilnehmer */
 function auslesenCebitTeilnehmer() {
     document.getElementById("cebitTeilnehmerUeberschriftName").innerHTML = cebitTeilnehmerUeberschrift.name;
@@ -231,10 +231,21 @@ function ausblenden() {
 }
 
 function einblenden() {
-    for (var i = 0; i < arguments.length; i++){
+    for (var i = 0; i < arguments.length; i++) {
         var element = document.getElementById(arguments[i]);
-        element.style.display='block';
+        element.style.display = 'block';
     }
 }
 
-
+function sendRequest(tabelleId) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var jsonObject = JSON.parse(xmlhttp.responseText);
+            for (var i in jsonObject) {
+                jsonObjectEinfuegen(tabelleId, jsonObject[i]);
+            }
+        }
+    };
+    xmlthttp.open("GET", "http://localhost/infinity/php/getDetails.php?messe=" + tabelleId);
+}

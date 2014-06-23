@@ -7,29 +7,25 @@ $email = $_GET["email"];
 $handy = $_GET["handy"];
 $studiengang = $_GET["studiengang"];
 
-$params = $vorname." ".$name.", ".$matrikelnr.", ".$email.", ".$handy.", ".$studiengang;
 
-if($_GET["messe"] == "cebit"){
-    $cebit = 'cebit.txt';
-    $handle = fopen($cebit, 'a') or die('Cannot open file: '.$cebit);
-    $data = 'params';
-    fwrite($handle, $data);
-    fclose($handle);
+if ($_GET["messe"] == "cebit") {
+    $cebit = fopen("../txt/cebit.txt", "a+");
+    fwrite($cebit, $vorname." ".$name.", ".$matrikelnr.", ".$email.", ".$handy.", ".$studiengang." \r\n");
+    fclose($cebit);
 }
 
-if($_GET["messe"] == "conhit"){
-    $conhit = 'conhit.txt';
-    $handle = fopen($conhit, 'a') or die('Cannot open file: '.$conhit);
-    $data = 'params';
-    fwrite($handle, $data);
-    fclose($handle);
+if ($_GET["messe"] == "conhit") {
+    $conhit = fopen("../txt/conhit.txt", "a+");
+    fwrite($conhit, $vorname." ".$name.", ".$matrikelnr.", ".$email.", ".$handy.", ".$studiengang." \r\n");
+    fclose($conhit);
 }
 
-if($_GET["messe"] == "webtech"){
-    $webtech = 'webtech.txt';
-    $handle = fopen($webtech, 'a') or die('Cannot open file: '.$webtech);
-    $data = 'params';
-    fwrite($handle, $data);
-    fclose($handle);
+if ($_GET["messe"] == "webtech") {
+    $webtech = fopen("../txt/webtech.txt", "a+");
+    fwrite($webtech, $vorname." ".$name.", ".$matrikelnr.", ".$email.", ".$handy.", ".$studiengang." \r\n");
+    fclose($webtech);
 }
-$>
+
+header("Location: http://localhost/infinity/");
+exit;
+?>
